@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class topdownMovement : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class topdownMovement : MonoBehaviour
 
     public Rigidbody2D rb;
 
-    Vector2 movement;
+    Vector2 moveInput;
 
     void Start()
     {
@@ -19,5 +20,10 @@ public class topdownMovement : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void OnMove(InputValue value)
+    {
+        moveInput = value.Get<Vector2>();
     }
 }
