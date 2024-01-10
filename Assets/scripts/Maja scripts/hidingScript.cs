@@ -14,8 +14,4 @@ public class hidingScript : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        
-    }
 }
