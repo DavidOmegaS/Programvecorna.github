@@ -7,6 +7,8 @@ public class Enemy_patrol : MonoBehaviour
     public Transform[] patrolPonits;
     public int targetpoint;
     public float speed;
+
+    private float rotationspeed;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,17 +19,20 @@ public class Enemy_patrol : MonoBehaviour
     void Update()
     {
         Patrol();
-    }
 
+        
+    }
     void Patrol()
     {
         transform.position = Vector2.MoveTowards(transform.position, patrolPonits[targetpoint].position, speed * Time.deltaTime);
+
+        gameObject.transform.LookAt(patrolPonits[targetpoint]);
+
         if (transform.position == patrolPonits[targetpoint].position)
         {
             IncresTargetint();
         }
     }
-
     void IncresTargetint()
     {
         targetpoint++; // adderar 1 på värdet 
