@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // Benjamin (currently stolen from unity docs)
+    public Transform origin;
+    public Transform target;
+    RaycastHit2D hit;
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
-        
+        hit = Physics2D.Linecast(origin.position, target.position);
+        Debug.DrawLine(origin.transform.position, target.transform.position);
+
+        print(hit.collider);
     }
 }
