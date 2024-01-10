@@ -8,12 +8,21 @@ public class NewBehaviourScript : MonoBehaviour
     public Transform origin;
     public Transform target;
     RaycastHit2D hit;
+    public int enemyLayer;
 
-    private void FixedUpdate()
+    
+
+    void OnTriggerEnter2D(Collider2D collider2D)
     {
-        hit = Physics2D.Linecast(origin.position, target.position);
+        int layerMask = ~(1 << enemyLayer);
+        hit = Physics2D.Linecast(origin.position, target.position, layerMask);
         Debug.DrawLine(origin.transform.position, target.transform.position);
 
         print(hit.collider);
+        
+        if (hit.collider == target.GetComponent<Collider2D>())
+        {
+            print("GOTTEM");
+        }
     }
 }
