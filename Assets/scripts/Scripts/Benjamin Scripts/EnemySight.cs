@@ -10,21 +10,14 @@ public class EnemySight : MonoBehaviour
     RaycastHit2D hit;
     public int enemyLayer;
     bool IsChasing;
-    Enemy_patrol patrol;
-    bool CurrentlyInSight;
+    public bool CurrentlyInSight;
 
 
     private void Start()
     {
-        patrol = GetComponent<Enemy_patrol>();
         IsChasing = false;
         CurrentlyInSight = false;
 
-    }
-
-    private void Update()
-    {
-        
     }
 
     void OnTriggerStay2D(Collider2D collider2D)
