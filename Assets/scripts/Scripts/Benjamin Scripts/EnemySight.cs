@@ -44,8 +44,8 @@ public class EnemySight : MonoBehaviour
         IsChasing = true;
         print("ILL GET YA");
         yield return new WaitForSeconds(2.5f);
-        int layerMask = ~(1 << enemyLayer); 
-        hit = Physics2D.Linecast(origin.position, target.position, layerMask;
+        int layerMask = ~(1 << enemyLayer);
+        hit = Physics2D.Linecast(origin.position, target.position, layerMask);
         if (CurrentlyInSight == true) // continues the chase
         {
             print("I SEE YA");
