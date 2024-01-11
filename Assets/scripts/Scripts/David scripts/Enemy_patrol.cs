@@ -8,6 +8,10 @@ public class Enemy_patrol : MonoBehaviour
     public int targetpoint; // vilken specifik punkt vi vill att den ska gå till 
     public float speed; // vilken hastighet den ska gå
 
+    public float wait = 2;
+    private float waitTime;
+    private bool isWaiting;
+
     private Vector2 lastRotation; // vilken var den sita rotationen vi använde
 
     // Start is called before the first frame update
@@ -15,34 +19,67 @@ public class Enemy_patrol : MonoBehaviour
     {
         targetpoint = 0; // sätter punkten till startpunkten
         transform.position = patrolPonits[0].position; // Sätt fiendens position till startpunkten
+       
+        waitTime = 0;
+
     }
     // Update is called once per frame
     void Update()
     {
+
+       
+
         Patrol(); // gör patrul koden
 
-        Vector2 direction = patrolPonits[targetpoint].position - transform.position;
+       // Vector2 direction = patrolPonits[targetpoint].position - transform.position;
        
-        if(lastRotation != direction)
+        //if(lastRotation != direction)
         {
-            transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
-            Debug.Log("Standing still");
+          //  transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
+            //Debug.Log("test");
         }
-        lastRotation = direction;
+        //lastRotation = direction;
 
     }
     void Patrol()
     {
-        transform.position = Vector2.MoveTowards(transform.position, patrolPonits[targetpoint].position, speed * Time.deltaTime); //Gör att fienden går till
+        transform.position = Vector2.MoveTowards(transform.position, patrolPonits[targetpoint].position, speed * Time.deltaTime); //Gör att fienden går till den nuvarande punkten
 
-        if (transform.position == patrolPonits[targetpoint].position) // om fienden har samma po
+        if (transform.position == patrolPonits[targetpoint].position )
+        {
+            isWaiting = true;
+        }
+        else
+        {
+            isWaiting = false;
+        }
+
+        if (isWaiting == true)
+        {
+           
+            waitTime -= Time.deltaTime; 
+        }
+
+        if (waitTime == 0 || waitTime <0)
+        {
+            waitTime = 0;
+
+        }
+        if (transform.position == patrolPonits[targetpoint].position && waitTime == 0  ) // om fienden har samma position som punkten och den har väntat tillräkligt länge
         {
             IncresTargetint();
+            waitTime = wait;
         }
+
+        
+
+        
+        
     }
     void IncresTargetint()
     {
         targetpoint++; // adderar 1 på värdet 
+
         if (targetpoint == patrolPonits.Length)
         {
             targetpoint = 0;
