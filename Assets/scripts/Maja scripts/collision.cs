@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class collision : MonoBehaviour
 {
-    private Collider2D collider;
+    private Collider2D z_collider;
     [SerializeField]
     private ContactFilter2D filter;
     private List<Collider2D> collidedObjects = new List<Collider2D>(1);
     protected virtual void Start()
     {
-        collider = GetComponent<Collider2D>();
+        z_collider = GetComponent<Collider2D>();
     }
 
     protected virtual void Update()
     {
-        collider.OverlapCollider(filter, collidedObjects);
+        z_collider.OverlapCollider(filter, collidedObjects);
         foreach(var o in collidedObjects)
         {
             OnCollided(o.gameObject);
         }
     }
 
-    private void OnCollided(GameObject collidedObject)
+    protected virtual void OnCollided(GameObject collidedObject)
     {
         Debug.Log("Collided with" + collidedObject.name);
     }
