@@ -382,6 +382,8 @@ MonoBehaviour:
   origin: {fileID: 1255085647}
   target: {fileID: 354014738}
   enemyLayer: 6
+  IsChasing: 0
+  CurrentlyInSight: 0
 --- !u!60 &1074600379
 PolygonCollider2D:
   m_ObjectHideFlags: 0
