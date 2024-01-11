@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class interactableObject : collision
 {
-    protected bool interacted = false;
+    private bool interacted = false;
 
     protected override void OnCollided(GameObject collidedObject)
     {
@@ -15,7 +15,10 @@ public class interactableObject : collision
     }
     private void OnInteract()
     {
-        Debug.Log("Interacted with " + name);
-        interacted = true;
+        if (interacted == false)
+        {
+            interacted = true;
+            Debug.Log("Interacted with " + name);
+        }
     }
 }
