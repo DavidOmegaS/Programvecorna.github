@@ -9,7 +9,7 @@ public class EnemySight : MonoBehaviour
     public Transform target;
     RaycastHit2D hit;
     public int enemyLayer;
-    bool IsChasing;
+    public bool IsChasing;
     public bool CurrentlyInSight;
 
 
