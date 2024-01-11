@@ -2,15 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hidingScript : MonoBehaviour, IInteractable
+public class hidingScript : MonoBehaviour
 {
-    bool hiding = false;
-    public GameObject E;
-    public void Interact()
-    {
-        Debug.Log("interacted");
-        hiding = true;
-    }
+    public int hej;
 
     void Start()
     {
