@@ -3,17 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class gameManager : MonoBehaviour
+public class gameManager : interactableObject
 {
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    
 
     public void Play()
     {
