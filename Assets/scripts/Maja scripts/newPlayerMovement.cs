@@ -21,12 +21,12 @@ public class newPlayerMovement : MonoBehaviour
     {
         ProcessInputs();
 
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.LeftControl)) // Holding left control makes the character move slower (crouchmodifier * movespeed) and reduce the size of the hitbox (harder to detect)
         {
             IsCrouching = true;
-            playercollider.size = new Vector2(0.4f, 0.4f);
+            playercollider.size = new Vector2(0.3f, 0.3f);
         }
-        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        else if (Input.GetKeyUp(KeyCode.LeftControl)) // disables crouch and sets collider back to normal
         {
             IsCrouching = false;
             playercollider.size = new Vector2(1, 1);

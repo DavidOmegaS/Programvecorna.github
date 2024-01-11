@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Crouch : MonoBehaviour
 {
+    // DO NOT USE THIS SCRIPT
+    // this script exists incase majas playermovement scripts crouch function doesnt work and i have to bugfix
     newPlayerMovement nPL;
     [SerializeField] BoxCollider2D playercollider;
     public float CrouchSpeed;
@@ -22,7 +24,7 @@ public class Crouch : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftControl))
         {
             IsCrouching = true;
-            playercollider.size = new Vector2(0.4f, 0.4f);
+            playercollider.size = new Vector2(0.3f, 0.3f);
         }
         else if (Input.GetKeyUp(KeyCode.LeftControl))
         {
