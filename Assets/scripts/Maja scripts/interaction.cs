@@ -31,6 +31,7 @@ public class interaction : MonoBehaviour
                     interactObj.Interact();
                 }
             }
+
         }
     }
 }
