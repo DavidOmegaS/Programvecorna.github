@@ -5,8 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {//ossian. Script för gameoverscreen och victory.
-
-    
+    string currentSceneName;
+    bool winScreenOn;
+    bool loseScreenOn;
     bool playerWin;
     bool PlayerCaught;
     [SerializeField]
@@ -14,20 +15,26 @@ public class GameOverScript : MonoBehaviour
     [SerializeField]
     GameObject Victoryscreen;
 
+    private void Start()
+    {
+        currentSceneName = SceneManager.GetActiveScene().name;//den activa scenens namn
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W)) //om spelaren vinner ska gameover visas
+
+        
+        if (Input.GetKeyDown(KeyCode.W) && loseScreenOn == false) //om spelaren vinner ska gameover visas
                                          //Sen kan kanske en bild på att spelaren delar ut maten visas efter en tid
         {
 
             Victoryscreen.SetActive(!Victoryscreen.activeSelf);
-
+            winScreenOn = true;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))//om spelaren dör (blir fångad) ska gameovertexten visas
+        if (Input.GetKeyDown(KeyCode.Escape) && winScreenOn == false)//om spelaren dör (blir fångad) ska gameovertexten visas
         {
 
             Gameoverscreen.SetActive(!Gameoverscreen.activeSelf);
-
+            loseScreenOn = true;
 
             {
 
@@ -37,14 +44,20 @@ public class GameOverScript : MonoBehaviour
 
             }
 
-
-
-
-
         }
-        if (Input.GetKeyDown(KeyCode.R))
+
+        if (Input.GetKeyDown(KeyCode.R))//reloadar scenen
         {
             reloadScene();
+        }
+
+        if (Gameoverscreen.activeSelf==false)//om win/lose skärmen visas kan man inte visa den andra
+        {                                    //kan byta denna mot typ settings så att man inte kan se settings och vanliga menyn samtidigt.
+            loseScreenOn = false;
+        }
+        if (Victoryscreen.activeSelf == false)
+        {
+           winScreenOn = false;
         }
     }
 
@@ -52,7 +65,7 @@ public class GameOverScript : MonoBehaviour
 
     {
         print("reloading scene");
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(currentSceneName);//laddar om den aktuella scenen
 
     }
 
