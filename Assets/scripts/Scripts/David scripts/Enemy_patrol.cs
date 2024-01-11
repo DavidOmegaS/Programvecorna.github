@@ -26,20 +26,7 @@ public class Enemy_patrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-       
-
         Patrol(); // gör patrul koden
-
-       // Vector2 direction = patrolPonits[targetpoint].position - transform.position;
-       
-        //if(lastRotation != direction)
-        {
-          //  transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
-            //Debug.Log("test");
-        }
-        //lastRotation = direction;
-
     }
     void Patrol()
     {
