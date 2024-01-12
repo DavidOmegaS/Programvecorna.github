@@ -13,7 +13,7 @@ public class interactableObject : collision
             OnInteract();
         }
     }
-    private void OnInteract()
+    public void OnInteract()
     {
         if (interacted == false)
         {
