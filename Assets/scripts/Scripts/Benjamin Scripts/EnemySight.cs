@@ -12,7 +12,7 @@ public class EnemySight : MonoBehaviour
     public bool IsChasing; // bool if player is being chased or not
     public bool CurrentlyInSight; // bool if player is currently being seen or not
 
-    public float waitTime; //
+    public float waitTime; // värde för hur länge den ska vänta - David
 
 
     private void Start()
@@ -45,7 +45,7 @@ public class EnemySight : MonoBehaviour
     {
         IsChasing = true;
         print("ILL GET YA");
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(waitTime);
         int layerMask = ~(1 << enemyLayer);
         hit = Physics2D.Linecast(origin.position, target.position, layerMask);
         if (CurrentlyInSight == true) // continues the chase

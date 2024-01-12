@@ -23,5 +23,6 @@ public class Enemy_chase : MonoBehaviour
         {
             test = false;
         }
+        
     }
 }
