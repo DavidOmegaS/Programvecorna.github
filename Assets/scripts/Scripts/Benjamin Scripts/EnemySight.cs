@@ -8,9 +8,11 @@ public class EnemySight : MonoBehaviour
     public Transform origin; // enemy character
     public Transform target; // target, player character
     RaycastHit2D hit; 
-    public int enemyLayer; // the layermask "enemyLayer" int value
+    public int IgnoreLayer = 6; // the layermask "enemyLayer" int value
     public bool IsChasing; // bool if player is being chased or not
     public bool CurrentlyInSight; // bool if player is currently being seen or not
+
+    public float waitTime; //
 
 
     private void Start()
@@ -23,7 +25,7 @@ public class EnemySight : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collider2D) // OnTriggerStay probably unneeded, may change to OnTriggerEnter later
     {
         CurrentlyInSight = true; 
-        int layerMask = ~(1 << enemyLayer); // Raycast hits all layers except the enemy layer, so it doesnt hit itself and block capability to see player
+        int layerMask = ~(1 << IgnoreLayer); // Raycast hits all layers except the enemy layer, so it doesnt hit itself and block capability to see player
         hit = Physics2D.Linecast(origin.position, target.position, layerMask); // The linecast itself and the result of what it hits
         Debug.DrawLine(origin.transform.position, target.transform.position); // simulation of what the linecast looks like
 
@@ -44,7 +46,7 @@ public class EnemySight : MonoBehaviour
         IsChasing = true;
         print("ILL GET YA");
         yield return new WaitForSeconds(2.5f);
-        int layerMask = ~(1 << enemyLayer);
+        int layerMask = ~(1 << IgnoreLayer);
         hit = Physics2D.Linecast(origin.position, target.position, layerMask);
         if (CurrentlyInSight == true) // continues the chase
         {

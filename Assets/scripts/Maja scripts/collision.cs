@@ -8,6 +8,7 @@ public class collision : MonoBehaviour
     [SerializeField]
     private ContactFilter2D filter;
     private List<Collider2D> collidedObjects = new List<Collider2D>(1);
+
     protected virtual void Start()
     {
         z_collider = GetComponent<Collider2D>();

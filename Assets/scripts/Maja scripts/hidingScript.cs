@@ -2,17 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class hidingScript : MonoBehaviour
+public class hidingScript : interactableObject
 {
-    public int hej;
+    private int hej;
+    public GameObject hideout;
 
-    void Start()
+    protected override void OnCollided(GameObject collidedObject)
     {
-        
-    }
-
-    void Update()
-    {
+        if (Input.GetKey(KeyCode.E) && gameObject.tag == "hideout")
+        {
+            OnInteract();            
+        }
         
     }
 
