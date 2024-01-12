@@ -10,12 +10,15 @@ public class newPlayerMovement : MonoBehaviour
     public float CrouchSpeed;
     [SerializeField] float CrouchMultiplier;
     public bool IsCrouching;
+    bool IsDashing;
+    [SerializeField] float DashSpeed;
 
     private Vector2 moveDirection;
 
     private void Start()
     {
         CrouchSpeed = moveSpeed * CrouchMultiplier;
+        IsDashing = false;
     }
     void Update() //processing inputs
     {
@@ -30,6 +33,10 @@ public class newPlayerMovement : MonoBehaviour
         {
             IsCrouching = false;
             playercollider.size = new Vector2(1, 1);
+        }
+        if (Input.GetKey(KeyCode.Space) && !IsDashing)
+        {
+            StartCoroutine(DashAbility());
         }
     }
 
@@ -49,6 +56,19 @@ public class newPlayerMovement : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector2(moveDirection.x * (IsCrouching ? CrouchSpeed : moveSpeed), moveDirection.y * (IsCrouching ? CrouchSpeed : moveSpeed));
+    }
+
+    IEnumerator DashAbility()
+    {
+        IsDashing = true;
+        moveSpeed += DashSpeed;
+        yield return new WaitForSeconds(0.05f);
+        playercollider.enabled = false;
+        yield return new WaitForSeconds(0.3f);
+        playercollider.enabled = true;
+        moveSpeed -= DashSpeed;
+        yield return new WaitForSeconds(0.5f);
+        IsDashing = false;
     }
 
 }
