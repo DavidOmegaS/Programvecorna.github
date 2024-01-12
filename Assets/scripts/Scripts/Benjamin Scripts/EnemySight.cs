@@ -12,6 +12,8 @@ public class EnemySight : MonoBehaviour
     public bool IsChasing; // bool if player is being chased or not
     public bool CurrentlyInSight; // bool if player is currently being seen or not
 
+    public float waitTime; //
+
 
     private void Start()
     {
