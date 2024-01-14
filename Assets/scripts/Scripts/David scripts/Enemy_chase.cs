@@ -15,7 +15,7 @@ public class Enemy_chase : MonoBehaviour
 
     Path path;
     int currentWaypoint;
-    bool rechEndOfPath = false; // Se om vi har kommit fram till vårat mål
+   public bool rechEndOfPath = false; // Se om vi har kommit fram till vårat mål
 
     Seeker seeker; // refferera sekker scriptet
     Rigidbody2D rb; // refererar rigidbody
@@ -55,7 +55,7 @@ public class Enemy_chase : MonoBehaviour
         if (!p.error)
         {
             path = p;
-            currentWaypoint = 0;
+            currentWaypoint = 1;
         }
     }
 
@@ -75,6 +75,11 @@ public class Enemy_chase : MonoBehaviour
         else
         {
             rechEndOfPath = false; // annars har den inte nått målet
+        }
+
+        if (sight.IsChasing == false && rechEndOfPath == true)
+        {
+
         }
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
