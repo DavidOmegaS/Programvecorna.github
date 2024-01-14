@@ -54,6 +54,7 @@ public class EnemySight : MonoBehaviour
         hit = Physics2D.Linecast(origin.position, target.position, layerMask);
         if (CurrentlyInSight == true) // continues the chase
         {
+            IsChasing = true; // David
             print("I SEE YA");
             StartCoroutine(ChaseTimer()); // loops the chasetimer
         }
