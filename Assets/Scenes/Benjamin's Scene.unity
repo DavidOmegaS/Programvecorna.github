@@ -213,10 +213,6 @@ PrefabInstance:
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 2791293633943554183, guid: ee8cb0d8a95a78048948a3382d7f9905, type: 3}
-      propertyPath: m_fontStyle
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2791293633943554183, guid: ee8cb0d8a95a78048948a3382d7f9905, type: 3}
       propertyPath: m_fontSizeBase
       value: 0
       objectReference: {fileID: 0}
@@ -332,8 +328,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 3.211928
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 8074290809932297728, guid: ee8cb0d8a95a78048948a3382d7f9905, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
