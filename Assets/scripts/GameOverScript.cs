@@ -14,16 +14,19 @@ public class GameOverScript : MonoBehaviour
     GameObject Gameoverscreen;
     [SerializeField]
     GameObject Victoryscreen;
+    public EnemySight sight;
+
 
     private void Start()
     {
         currentSceneName = SceneManager.GetActiveScene().name;//den activa scenens namn
+        sight = GetComponent<EnemySight>();
     }
     void Update()
     {
 
         
-        if (Input.GetKeyDown(KeyCode.W) && loseScreenOn == false) //om spelaren vinner ska gameover visas
+        if (sight.CurrentlyInSight==true && loseScreenOn == false) //om spelaren vinner ska gameover visas
                                          //Sen kan kanske en bild på att spelaren delar ut maten visas efter en tid
         {
 
@@ -45,7 +48,7 @@ public class GameOverScript : MonoBehaviour
             }
 
         }
-
+        
         if (Input.GetKeyDown(KeyCode.R))//reloadar scenen
         {
             reloadScene();
