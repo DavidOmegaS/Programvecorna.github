@@ -22,7 +22,7 @@ public class EnemySight : MonoBehaviour
 
     }
 
-    void OnTriggerEnter2D(Collider2D collider2D) // OnTriggerStay probably unneeded, may change to OnTriggerEnter later
+    void OnTriggerEnter2D(Collider2D collider2D) 
     {
         CurrentlyInSight = true; 
         int layerMask = ~(1 << enemyLayer); // Raycast hits all layers except the enemy layer, so it doesnt hit itself and block capability to see player

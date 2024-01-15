@@ -43,13 +43,12 @@ public class Enemy_chase : MonoBehaviour
             }
             else
             {
-                //transform.position = Vector2.MoveTowards(transform.position, startPoint.position, speed * Time.deltaTime);
                  seeker.StartPath(rb.position, startPoint.position, OnPathComplete);
             }
 
-            if (sight.IsChasing == false && rechEndOfPath == true)
+            //if (sight.IsChasing == false && rechEndOfPath == true)
             {
-                transform.position = startPoint.position; 
+              //  transform.position = startPoint.position; 
             }
 
         }
