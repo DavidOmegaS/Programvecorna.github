@@ -123,11 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &73534664 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6176591252841655021, guid: b592943947edd7c40b7abb045bed4c5d, type: 3}
-  m_PrefabInstance: {fileID: 8830349400340820101}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &73534666 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6618640938799829243, guid: b592943947edd7c40b7abb045bed4c5d, type: 3}
@@ -147,7 +142,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 182898217}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 752e9c3db1b0e6842b255227fe91f9ee, type: 3}
+  m_Script: {fileID: 11500000, guid: be61ff0f2febd0246a7d3b2b9d01951f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   filter:
@@ -164,8 +159,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  hideText: {fileID: 0}
-  stealText: {fileID: 0}
   hideout: {fileID: 0}
 --- !u!1 &224469296
 GameObject:
@@ -279,8 +272,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  hideText: {fileID: 0}
-  stealText: {fileID: 0}
   item: {fileID: 224469296}
 --- !u!61 &224469300
 BoxCollider2D:
@@ -439,8 +430,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  hideText: {fileID: 0}
-  stealText: {fileID: 0}
   item: {fileID: 241212638}
 --- !u!61 &241212642
 BoxCollider2D:
@@ -592,8 +581,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  hideText: {fileID: 73534664}
-  stealText: {fileID: 1522728010}
 --- !u!4 &456955045
 Transform:
   m_ObjectHideFlags: 0
@@ -768,8 +755,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  hideText: {fileID: 0}
-  stealText: {fileID: 0}
 --- !u!114 &545980281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -796,8 +781,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  hideText: {fileID: 0}
-  stealText: {fileID: 0}
   hideout: {fileID: 545980276}
 --- !u!1 &863095737
 GameObject:
@@ -1081,8 +1064,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  hideText: {fileID: 0}
-  stealText: {fileID: 0}
 --- !u!114 &2085225291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1109,8 +1090,6 @@ MonoBehaviour:
     maxDepth: 0
     minNormalAngle: 0
     maxNormalAngle: 0
-  hideText: {fileID: 0}
-  stealText: {fileID: 0}
   hideout: {fileID: 2085225286}
 --- !u!1001 &8077583528258901424
 PrefabInstance:
@@ -1123,6 +1102,34 @@ PrefabInstance:
     - target: {fileID: 3323272730074799445, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_Name
       value: player
+      objectReference: {fileID: 0}
+    - target: {fileID: 3323272730074799445, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
+      propertyPath: m_Size.x
+      value: 0.89215827
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
+      propertyPath: m_Size.y
+      value: 1.3312277
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.05392085
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.09628743
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 8286661455721949936, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_Sprite
