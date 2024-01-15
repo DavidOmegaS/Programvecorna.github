@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 public class GameOverScript : MonoBehaviour
 {//ossian. Script för gameoverscreen och victory.
     string currentSceneName;
-    bool winScreenOn;
-    bool loseScreenOn;
+    public bool winScreenOn;
+    public bool loseScreenOn;
     bool playerWin;
     bool PlayerCaught;
     [SerializeField]
