@@ -21,6 +21,7 @@ public class hidingScript : interactableObject
         if(AAA == true)
         {
             E.SetActive(true);
+            Debug.Log("HIDE!!!");
         }
         else
         {
