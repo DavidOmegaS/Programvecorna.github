@@ -6,7 +6,6 @@ using TMPro;
 
 public class EscapeKey : MonoBehaviour
 {
-    GameOverScript GOS;
     public bool IsPaused;
     [SerializeField] Canvas pausemenu;
 
@@ -14,12 +13,11 @@ public class EscapeKey : MonoBehaviour
     {
         Time.timeScale = 1;
         IsPaused = false;
-        GOS = GetComponent<GameOverScript>();
         pausemenu.GetComponent<Canvas>().enabled = false;
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && IsPaused == false && (GOS.winScreenOn == false || GOS.loseScreenOn == false))
+        if(Input.GetKeyDown(KeyCode.Escape) && IsPaused == false)
         {
             pausemenu.GetComponent<Canvas>().enabled = true;
             Time.timeScale = 0;
