@@ -43,9 +43,15 @@ public class Enemy_chase : MonoBehaviour
             }
             else
             {
-                seeker.StartPath(rb.position, startPoint.position, OnPathComplete);
+                //transform.position = Vector2.MoveTowards(transform.position, startPoint.position, speed * Time.deltaTime);
+                 seeker.StartPath(rb.position, startPoint.position, OnPathComplete);
             }
-           
+
+            if (sight.IsChasing == false && rechEndOfPath == true)
+            {
+                transform.position = startPoint.position; 
+            }
+
         }
       
     }
@@ -77,10 +83,7 @@ public class Enemy_chase : MonoBehaviour
             rechEndOfPath = false; // annars har den inte nått målet
         }
 
-        if (sight.IsChasing == false && rechEndOfPath == true)
-        {
-
-        }
+       
 
         Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
