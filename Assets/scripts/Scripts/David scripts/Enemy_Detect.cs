@@ -14,6 +14,7 @@ public class Enemy_Detect : MonoBehaviour
     {
         sight = GetComponent<EnemySight>();
         gameOverMenu.SetActive(false);
+        Time.timeScale = 1;
 
     }
 
@@ -25,6 +26,7 @@ public class Enemy_Detect : MonoBehaviour
             gameOverMenu.SetActive(true);
             Time.timeScale = 0;
         }
+       
        
     }
 }
