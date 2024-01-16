@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameOverScript : MonoBehaviour
 {//ossian. Script för gameoverscreen och victory.
+
+    
     string currentSceneName;
     public bool winScreenOn;
     public bool loseScreenOn;
@@ -21,31 +23,28 @@ public class GameOverScript : MonoBehaviour
     {
         currentSceneName = SceneManager.GetActiveScene().name;//den activa scenens namn
         sight = GetComponent<EnemySight>();
+
+        Time.timeScale = 1; // Startar spelet -David
     }
     void Update()
     {
 
         
-        if (sight.CurrentlyInSight==true && loseScreenOn == false) //om spelaren vinner ska gameover visas
+       /* if ( loseScreenOn == false) //om spelaren vinner ska gameover visas
                                          //Sen kan kanske en bild på att spelaren delar ut maten visas efter en tid
         {
 
-            Victoryscreen.SetActive(!Victoryscreen.activeSelf);
+            Victoryscreen.SetActive(true);
             winScreenOn = true;
-        }
-        if (Input.GetKeyDown(KeyCode.Escape) && winScreenOn == false)//om spelaren dör (blir fångad) ska gameovertexten visas
+        }*/
+        if (sight.CurrentlyInSight == true && winScreenOn == false)//om spelaren dör (blir fångad) ska gameovertexten visas
         {
 
-            Gameoverscreen.SetActive(!Gameoverscreen.activeSelf);
+            Gameoverscreen.SetActive(true);
             loseScreenOn = true;
+            Time.timeScale = 0; // Stoppar spelet -David
 
-            {
-
-                /*-----------------------------------------------------------------------------------*/
-                /*-----------------------------------------------------------------------------------*/
-                /*-----------------------------------------------------------------------------------*/
-
-            }
+           
 
         }
         
@@ -69,6 +68,7 @@ public class GameOverScript : MonoBehaviour
     {
         print("reloading scene");
         SceneManager.LoadScene(currentSceneName);//laddar om den aktuella scenen
+        Time.timeScale = 1; //-David
 
     }
 
