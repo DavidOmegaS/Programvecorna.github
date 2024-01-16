@@ -71,6 +71,7 @@ public class GameOverScript : MonoBehaviour
     {
         print("reloading scene");
         SceneManager.LoadScene(currentSceneName);//laddar om den aktuella scenen
+        Time.timeScale = 1; //-David
 
     }
 
