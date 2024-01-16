@@ -71,6 +71,7 @@ public class newPlayerMovement : MonoBehaviour
 
     IEnumerator DashAbility()
     {
+        animator.SetBool("Dash", true);
         IsDashing = true;
         moveSpeed += DashSpeed;
         yield return new WaitForSeconds(0.05f);
@@ -79,6 +80,7 @@ public class newPlayerMovement : MonoBehaviour
         playercollider.enabled = true;
         moveSpeed -= DashSpeed;
         yield return new WaitForSeconds(0.5f);
+        animator.SetBool("Dash", false);
         IsDashing = false;
     }
 
