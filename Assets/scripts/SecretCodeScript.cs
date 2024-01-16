@@ -27,7 +27,7 @@ public class SecretCodeScript : MonoBehaviour
         
     }
 
-    void clearText()
+   public void clearText()
     {
       
         mainInputfield.text = string.Empty;
