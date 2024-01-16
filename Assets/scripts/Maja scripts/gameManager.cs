@@ -17,4 +17,9 @@ public class gameManager : interactableObject
         Application.Quit();
         Debug.Log("player quit");
     }
+
+    public void mainMenu()
+    {
+        SceneManager.LoadScene("mainMenu");
+    }
 }

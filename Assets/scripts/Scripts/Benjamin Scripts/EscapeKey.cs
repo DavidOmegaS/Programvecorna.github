@@ -33,15 +33,4 @@ public class EscapeKey : MonoBehaviour
         }
 
     }
-
-    public void MonoQuit() // made a duplicate quit void function since textmashpro apperantly cant detect InteracteObject scripts? Unsure
-    {
-        Application.Quit();
-    }
-
-    public void MonoMenu()
-    {
-        SceneManager.LoadScene("mainMenu");
-    }
-
 }
