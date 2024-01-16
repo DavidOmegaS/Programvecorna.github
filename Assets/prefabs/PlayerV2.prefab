@@ -218,7 +218,7 @@ MonoBehaviour:
   CrouchSpeed: 0
   CrouchMultiplier: 0.5
   IsCrouching: 0
-  DashSpeed: 5
+  DashSpeed: 10
 --- !u!1 &8639008688933627628
 GameObject:
   m_ObjectHideFlags: 0
