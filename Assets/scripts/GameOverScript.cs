@@ -23,6 +23,8 @@ public class GameOverScript : MonoBehaviour
     {
         currentSceneName = SceneManager.GetActiveScene().name;//den activa scenens namn
         sight = GetComponent<EnemySight>();
+
+        Time.timeScale = 1; // Startar spelet -David
     }
     void Update()
     {
@@ -40,14 +42,9 @@ public class GameOverScript : MonoBehaviour
 
             Gameoverscreen.SetActive(true);
             loseScreenOn = true;
+            Time.timeScale = 0; // Stoppar spelet -David
 
-            {
-
-                /*-----------------------------------------------------------------------------------*/
-                /*-----------------------------------------------------------------------------------*/
-                /*-----------------------------------------------------------------------------------*/
-
-            }
+           
 
         }
         
