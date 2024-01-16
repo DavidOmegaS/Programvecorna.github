@@ -26,4 +26,11 @@ public class SecretCodeScript : MonoBehaviour
         }
         
     }
+
+   public void clearText()
+    {
+      
+        mainInputfield.text = string.Empty;
+        
+    }
 }
