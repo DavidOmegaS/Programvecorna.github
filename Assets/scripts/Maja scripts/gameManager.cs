@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class gameManager : interactableObject
+public class gameManager : MonoBehaviour
 {
     
 
