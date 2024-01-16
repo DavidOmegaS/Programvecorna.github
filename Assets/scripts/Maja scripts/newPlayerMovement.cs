@@ -20,8 +20,8 @@ public class newPlayerMovement : MonoBehaviour
     {
         CrouchSpeed = moveSpeed * CrouchMultiplier;
         IsDashing = false;
-        animator = GetComponentInChildren<Animator>();
-        animator.SetBool("Walk", false);
+        /*animator = GetComponentInChildren<Animator>();
+        animator.SetBool("Walk", false);*/
     }
     void Update() //processing inputs
     {
@@ -59,18 +59,19 @@ public class newPlayerMovement : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector2(moveDirection.x * (IsCrouching ? CrouchSpeed : moveSpeed), moveDirection.y * (IsCrouching ? CrouchSpeed : moveSpeed));
-        if(Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == -1)
+        /*if(Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == -1)
         {
             animator.SetBool("Walk", true);
         }
         else
         {
             animator.SetBool("Walk", false);    
-        }
+        }*/
     }
 
     IEnumerator DashAbility()
     {
+        animator.SetBool("Dash", true);
         IsDashing = true;
         moveSpeed += DashSpeed;
         yield return new WaitForSeconds(0.05f);
@@ -79,6 +80,7 @@ public class newPlayerMovement : MonoBehaviour
         playercollider.enabled = true;
         moveSpeed -= DashSpeed;
         yield return new WaitForSeconds(0.5f);
+        animator.SetBool("Dash", false);
         IsDashing = false;
     }
 
