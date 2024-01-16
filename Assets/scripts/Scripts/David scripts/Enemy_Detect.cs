@@ -1,16 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy_Detect : MonoBehaviour
 {
     public EnemySight sight;
     public bool test;
+    public GameObject gameOverMenu;
 
     // Start is called before the first frame update
     void Start()
     {
         sight = GetComponent<EnemySight>();
+        gameOverMenu.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -18,11 +22,9 @@ public class Enemy_Detect : MonoBehaviour
     {
         if (sight.CurrentlyInSight == true)
         {
-            test = true;
+            gameOverMenu.SetActive(true);
+            Time.timeScale = 0;
         }
-        else
-        {
-            test = false;
-        }
+       
     }
 }
