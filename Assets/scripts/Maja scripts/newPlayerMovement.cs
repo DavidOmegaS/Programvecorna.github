@@ -14,6 +14,8 @@ public class newPlayerMovement : MonoBehaviour
     [SerializeField] float DashSpeed;
     Animator animator;
 
+    public bool IsWalking; // for audiocontroller (benjamin)
+
     private Vector2 moveDirection;
 
     private void Start()
@@ -23,6 +25,7 @@ public class newPlayerMovement : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         animator.SetBool("Walk", false);
         animator.SetBool("Dash", false);
+        IsWalking = false;
     }
     void Update() //processing inputs
     {
@@ -63,10 +66,12 @@ public class newPlayerMovement : MonoBehaviour
         if(Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == -1)
         {
             animator.SetBool("Walk", true);
+            IsWalking = true;
         }
         else
         {
-            animator.SetBool("Walk", false);    
+            animator.SetBool("Walk", false);
+            IsWalking = false;
         }
     }
 
