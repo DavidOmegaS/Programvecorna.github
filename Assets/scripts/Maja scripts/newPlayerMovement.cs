@@ -17,6 +17,8 @@ public class newPlayerMovement : MonoBehaviour
 
     private Vector2 moveDirection;
 
+    private bool isMoving = true;
+
     private void Start()
     {
         CrouchSpeed = moveSpeed * CrouchMultiplier;
@@ -42,6 +44,17 @@ public class newPlayerMovement : MonoBehaviour
         if (Input.GetKey(KeyCode.Space) && !IsDashing)
         {
             // StartCoroutine(DashAbility());
+        }
+
+        if(Input.GetKeyDown(KeyCode.E) && isMoving == true)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            isMoving = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.E) && isMoving == false)
+        {
+            rb.constraints = RigidbodyConstraints2D.None;
         }
     }
 
