@@ -4,28 +4,22 @@ using UnityEngine;
 
 public class hidingScript : interactableObject
 {
-    private int hej;
     public GameObject player;
-    public GameObject E;
-    private bool AAA = false;
+    public GameObject beforeHiding;
+    public GameObject afterHiding;
+    public GameObject leaveText;
+    public GameObject hideText;
 
     protected override void OnCollided(GameObject collidedObject)
     {
         if (Input.GetKey(KeyCode.E) && gameObject.tag == "hideout")
         {
             OnInteract();
-            player.transform.position = new Vector2(0, 0);
-        }
-        AAA = true;
-        
-        if(AAA == true)
-        {
-            E.SetActive(true);
-            Debug.Log("HIDE!!!");
-        }
-        else
-        {
-            E.SetActive(false);
+            player.transform.position = new Vector2(5f, 1f);
+            beforeHiding.SetActive(false);
+            afterHiding.SetActive(true);
+            leaveText.SetActive(true);
+            hideText.SetActive(false);
         }
 
     }
