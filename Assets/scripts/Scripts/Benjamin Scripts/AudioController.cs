@@ -10,6 +10,7 @@ public class AudioController : MonoBehaviour
     public AudioClip[] clips;
     [SerializeField] float loopdelay;
     bool CanPlay;
+    float dashtimer;
 
     // for determing which audiosource its using
 
@@ -30,7 +31,13 @@ public class AudioController : MonoBehaviour
       {
             StartCoroutine(AudioDelay());
       }
-       
+
+      if (nPL.IsDashing = true && dashtimer >= 1.5f)
+      {
+            AS.PlayOneShot(clips[3])
+            dashtimer = Time.deltaTime;
+      }
+    
     }
 
     IEnumerator AudioDelay()
