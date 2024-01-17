@@ -47,7 +47,7 @@ public class newPlayerMovement : MonoBehaviour
         }
 
         //maja
-        if(Input.GetKey(KeyCode.E) && isMoving == true)
+        /*if(Input.GetKey(KeyCode.E) && isMoving == true)
         {
             rb.constraints = RigidbodyConstraints2D.FreezePosition;
             isMoving = false;
@@ -57,7 +57,7 @@ public class newPlayerMovement : MonoBehaviour
         {
             rb.constraints = RigidbodyConstraints2D.None;
             isMoving = true;
-        }
+        }*/
     }
 
     void FixedUpdate() //physics calculations
