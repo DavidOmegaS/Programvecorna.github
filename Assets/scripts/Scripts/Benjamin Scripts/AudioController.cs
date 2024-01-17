@@ -26,7 +26,7 @@ public class AudioController : MonoBehaviour
     void Update()
     {
 
-        if (nPL.IsWalking == true && CanPlay == true) 
+      if (nPL.IsWalking == true && CanPlay == true) 
       {
             StartCoroutine(AudioDelay());
       }
