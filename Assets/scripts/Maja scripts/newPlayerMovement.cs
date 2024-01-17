@@ -46,6 +46,7 @@ public class newPlayerMovement : MonoBehaviour
             // StartCoroutine(DashAbility());
         }
 
+        //maja
         if(Input.GetKey(KeyCode.E) && isMoving == true)
         {
             rb.constraints = RigidbodyConstraints2D.FreezePosition;
