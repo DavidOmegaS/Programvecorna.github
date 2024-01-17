@@ -23,7 +23,7 @@ public class hidingScript : interactableObject
             hideText.SetActive(false);
         }
 
-        if (Input.GetKey(KeyCode.F) && gameObject.tag == "hideout")
+        if (Input.GetKey(KeyCode.F))
         {
             beforeHiding.SetActive(true);
             afterHiding.SetActive(false);
