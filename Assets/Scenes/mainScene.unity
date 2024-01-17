@@ -4869,11 +4869,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1603653856763854124, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.85
+      value: 11.86
       objectReference: {fileID: 0}
     - target: {fileID: 1603653856763854124, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.28
+      value: 6.73
       objectReference: {fileID: 0}
     - target: {fileID: 4733175416534440092, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: wait
@@ -4981,11 +4981,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8088186164210044776, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14
+      value: 20.13
       objectReference: {fileID: 0}
     - target: {fileID: 8088186164210044776, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7
+      value: 0.97
       objectReference: {fileID: 0}
     - target: {fileID: 8345986032672033494, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_SortingOrder
@@ -10727,7 +10727,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &1224932826
 SpriteRenderer:
   m_ObjectHideFlags: 0
