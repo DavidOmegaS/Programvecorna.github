@@ -13,6 +13,7 @@ public class newPlayerMovement : MonoBehaviour
     bool IsDashing;
     [SerializeField] float DashSpeed;
     Animator animator;
+    public bool IsWalking; // for audiocontroller - benjamin
 
     private Vector2 moveDirection;
 
