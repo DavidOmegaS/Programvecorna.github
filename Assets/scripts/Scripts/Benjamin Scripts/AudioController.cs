@@ -8,6 +8,7 @@ public class AudioController : MonoBehaviour
     [SerializeField] AudioSource Step;
     [SerializeField] AudioSource AmbientMusic;
     [SerializeField] AudioSource StressMusic;
+    [SerializeField] AudioSource MenuTheme;
     [SerializeField] newPlayerMovement nPL;
 
     public bool Stress;
@@ -18,9 +19,7 @@ public class AudioController : MonoBehaviour
 
     // for determing which audiosource its using
 
-    [SerializeField] bool Player;
-    [SerializeField] bool Enemy;
-    [SerializeField] bool Environmental;
+    [SerializeField] bool IsmenuScene;
     
     void Start()
     {
@@ -31,21 +30,32 @@ public class AudioController : MonoBehaviour
     void Update()
     {
 
-        if (nPL.IsWalking == true && CanPlay == true) 
+        if (IsmenuScene == false)
         {
-            StartCoroutine(AudioDelay());
+            if (nPL.IsWalking == true && CanPlay == true)
+            {
+                StartCoroutine(AudioDelay());
+            }
+
+            if (Stress == true && !StressMusic.isPlaying)
+            {
+                AmbientMusic.Pause();
+                StressMusic.UnPause();
+                StressMusic.Play();
+
+            }
+            else if (Stress == false && !AmbientMusic.isPlaying)
+            {
+                StressMusic.Pause();
+                AmbientMusic.UnPause();
+                AmbientMusic.Play();
+            }
         }
 
-        if (Stress == true && !StressMusic.isPlaying)
+        if (IsmenuScene == true && !MenuTheme.isPlaying)
         {
-            StressMusic.Play();
-            
+            MenuTheme.Play();
         }
-        else if(Stress == false && !AmbientMusic.isPlaying)
-        {
-            AmbientMusic.Play();
-        }
-
     }
 
     IEnumerator AudioDelay()

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4733175416534440092}
   - component: {fileID: 756090562516408323}
   - component: {fileID: 2682850045532481315}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Walking Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -140,7 +140,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.25716615}
+  m_Offset: {x: 0.2953499, y: -0.08679628}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0.39999998}
     pivot: {x: 0.42, y: 0.4389313}
@@ -151,7 +151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 2.542997}
+  m_Size: {x: 1.2075428, y: 2.5005808}
   m_EdgeRadius: 0
 --- !u!95 &2682850045532481315
 Animator:
@@ -183,7 +183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9091111552332549203}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4388335786859765341}
   - component: {fileID: 7787134980365912907}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,7 +266,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1603653856763854124}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 1 (Starting point)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8088186164210044776}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -333,7 +333,7 @@ GameObject:
   - component: {fileID: 8728645230322062611}
   - component: {fileID: 7382981601489912406}
   - component: {fileID: 5695619873971670383}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Triangle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8026178379955734866}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy controler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -552,7 +552,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8069620122785571764}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

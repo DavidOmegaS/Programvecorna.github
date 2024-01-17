@@ -17,6 +17,7 @@ public class GameOverScript : MonoBehaviour
     [SerializeField]
     GameObject Victoryscreen;
     public EnemySight sight;
+    public timer time;
 
 
     private void Start()
@@ -37,7 +38,7 @@ public class GameOverScript : MonoBehaviour
             Victoryscreen.SetActive(true);
             winScreenOn = true;
         }*/
-        if (sight.CurrentlyInSight == true && winScreenOn == false)//om spelaren dör (blir fångad) ska gameovertexten visas
+        if (sight.CurrentlyInSight == true && winScreenOn == false || time.timeIsUp == true)//om spelaren dör (blir fångad) ska gameovertexten visas
         {
 
             Gameoverscreen.SetActive(true);

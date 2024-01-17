@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3265800645183765262}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.413244, y: -1.5239464, z: -0.033794932}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -178,16 +178,16 @@ MonoBehaviour:
   Step: {fileID: 0}
   AmbientMusic: {fileID: 5323587789546586047}
   StressMusic: {fileID: 4135072519493847}
+  MenuTheme: {fileID: 4337097875864692273}
   nPL: {fileID: 0}
+  Stress: 0
   clips:
   - {fileID: 8300000, guid: fab9a44847f50ee4494462231abd3f63, type: 3}
   - {fileID: 8300000, guid: d449ef11b1b092b49bd0a1696c9b4d0d, type: 3}
   - {fileID: 8300000, guid: 6dadbee2493d0c744aba6c0c3d2e0a56, type: 3}
   - {fileID: 8300000, guid: 9eff28f888c4cba4e83d4de3ddc9110d, type: 3}
   loopdelay: 0.25
-  Player: 0
-  Enemy: 0
-  Environmental: 0
+  IsmenuScene: 0
 --- !u!1 &5897351461876034036
 GameObject:
   m_ObjectHideFlags: 0
@@ -230,7 +230,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: d449ef11b1b092b49bd0a1696c9b4d0d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: b1c2b1358e6a0464e9e949b94894199d, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -342,7 +342,7 @@ Transform:
   m_GameObject: {fileID: 7140314497447717121}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.413244, y: -1.5239464, z: -0.033794932}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
