@@ -26,7 +26,6 @@ public class GameOverScript : MonoBehaviour
         sight = GetComponent<EnemySight>();
 
         Time.timeScale = 1; // Startar spelet -David
-        time = GetComponent<timer>();
     }
     void Update()
     {
