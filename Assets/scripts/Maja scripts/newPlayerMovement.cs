@@ -10,7 +10,7 @@ public class newPlayerMovement : MonoBehaviour
     public float CrouchSpeed;
     [SerializeField] float CrouchMultiplier;
     public bool IsCrouching;
-    bool IsDashing;
+    public bool IsDashing;
     [SerializeField] float DashSpeed;
     Animator animator;
     public bool IsWalking; // for audiocontroller - benjamin
