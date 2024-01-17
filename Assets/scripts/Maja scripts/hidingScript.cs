@@ -23,6 +23,14 @@ public class hidingScript : interactableObject
             hideText.SetActive(false);
         }
 
+        if (Input.GetKey(KeyCode.F))
+        {
+            beforeHiding.SetActive(true);
+            afterHiding.SetActive(false);
+            leaveText.SetActive(false);
+            hideText.SetActive(true);
+        }
+
     }
 
 }
