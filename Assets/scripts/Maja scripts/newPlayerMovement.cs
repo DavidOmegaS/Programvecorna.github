@@ -15,13 +15,15 @@ public class newPlayerMovement : MonoBehaviour
     Animator animator;
     public bool IsWalking; // for audiocontroller - benjamin
 
+    [SerializeField] AudioSource AS;
+    [SerializeField] AudioController AC;
+
     private Vector2 moveDirection;
 
     private void Start()
     {
         CrouchSpeed = moveSpeed * CrouchMultiplier;
-        IsDashing = false;
-        animator = GetComponentInChildren<Animator>();
+        animator = GetComponentInChildren<Animator>(); // put a empty object with a sprite to animate
         animator.SetBool("Walk", false);
         animator.SetBool("Dash", false);
     }
@@ -39,9 +41,9 @@ public class newPlayerMovement : MonoBehaviour
             IsCrouching = false;
             playercollider.size = new Vector2(1, 1);
         }
-        if (Input.GetKey(KeyCode.Space) && !IsDashing)
+        if (Input.GetKeyDown(KeyCode.Space) && IsDashing == false)
         {
-            // StartCoroutine(DashAbility());
+            StartCoroutine(DashAbility());
         }
     }
 
@@ -73,19 +75,21 @@ public class newPlayerMovement : MonoBehaviour
         }
     }
 
-    /*IEnumerator DashAbility()
+    IEnumerator DashAbility()
     {
-        animator.SetBool("Dash", true);
+        AS.PlayOneShot(AC.clips[3]);
         IsDashing = true;
+        animator.SetBool("Dash", true);
         moveSpeed += DashSpeed;
         yield return new WaitForSeconds(0.05f);
         playercollider.enabled = false;
         yield return new WaitForSeconds(0.3f);
         playercollider.enabled = true;
-        moveSpeed -= DashSpeed;
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         animator.SetBool("Dash", false);
+        moveSpeed -= DashSpeed;
         IsDashing = false;
-    }*/
+        StopCoroutine(DashAbility());
+    }
 
 }
