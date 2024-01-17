@@ -10,6 +10,7 @@ public class hidingScript : interactableObject
     public GameObject leaveText;
     public GameObject hideText;
 
+
     protected override void OnCollided(GameObject collidedObject)
     {
         if (Input.GetKey(KeyCode.E) && gameObject.tag == "hideout")
@@ -20,6 +21,14 @@ public class hidingScript : interactableObject
             afterHiding.SetActive(true);
             leaveText.SetActive(true);
             hideText.SetActive(false);
+        }
+
+        if (Input.GetKey(KeyCode.F))
+        {
+            beforeHiding.SetActive(true);
+            afterHiding.SetActive(false);
+            leaveText.SetActive(false);
+            hideText.SetActive(true);
         }
 
     }

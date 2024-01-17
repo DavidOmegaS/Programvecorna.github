@@ -572,9 +572,10 @@ GameObject:
   m_Component:
   - component: {fileID: 586289982}
   - component: {fileID: 586289981}
+  - component: {fileID: 586289983}
   m_Layer: 0
-  m_Name: darkiplier
-  m_TagString: Untagged
+  m_Name: hideTunna
+  m_TagString: hideout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -639,13 +640,44 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 586289980}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 5, y: 1, z: 0}
   m_LocalScale: {x: 2, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &586289983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586289980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 752e9c3db1b0e6842b255227fe91f9ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  filter:
+    useTriggers: 0
+    useLayerMask: 0
+    useDepth: 0
+    useOutsideDepth: 0
+    useNormalAngle: 0
+    useOutsideNormalAngle: 0
+    layerMask:
+      serializedVersion: 2
+      m_Bits: 0
+    minDepth: 0
+    maxDepth: 0
+    minNormalAngle: 0
+    maxNormalAngle: 0
+  player: {fileID: 182898217}
+  beforeHiding: {fileID: 2085225286}
+  afterHiding: {fileID: 586289980}
+  leaveText: {fileID: 1952564324}
+  hideText: {fileID: 1281620414}
 --- !u!1 &775097906
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,7 +690,7 @@ GameObject:
   - component: {fileID: 775097909}
   - component: {fileID: 775097908}
   m_Layer: 5
-  m_Name: Goal
+  m_Name: stealList
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -680,7 +712,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 20}
+  m_AnchoredPosition: {x: -5, y: -10}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &775097908
@@ -704,7 +736,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_text: "\tSteal:\n\n- Watermelon 0/6\n- Money 0/3\n- Banana 0/2\n- Fnaf 0/8\n-
-    Markiplier 0/1"
+    Markiplier 0/1\n- Portuguese Cat 0/1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -798,7 +830,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &805062448
 RectTransform:
   m_ObjectHideFlags: 0
@@ -817,7 +849,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 300, y: 100}
-  m_SizeDelta: {x: 230, y: 250}
+  m_SizeDelta: {x: 230, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &805062449
 MonoBehaviour:
@@ -832,7 +864,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.779058, b: 0.42138356, a: 1}
+  m_Color: {r: 1, g: 0.779058, b: 0.42138356, a: 0.5019608}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1131,7 +1163,7 @@ GameObject:
   - component: {fileID: 2085225290}
   - component: {fileID: 2085225291}
   m_Layer: 0
-  m_Name: markiplier
+  m_Name: tunna
   m_TagString: hideout
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1178,8 +1210,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b77645781b275384c9aaf6b664f6ca56, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1199,7 +1231,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5, y: 1, z: 0}
-  m_LocalScale: {x: 2, y: 3, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1240,7 +1272,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 0.5, y: 0.75}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1350,6 +1382,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 0968e3efeebed5f4295eb831e4c6e32a, type: 3}
+    - target: {fileID: 8286661455721949936, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9061612939119823976, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_LocalScale.x
       value: 2
@@ -1417,8 +1453,8 @@ SceneRoots:
   - {fileID: 8077583528258901424}
   - {fileID: 545980278}
   - {fileID: 2085225288}
+  - {fileID: 586289982}
   - {fileID: 1281620415}
   - {fileID: 1952564326}
   - {fileID: 456955045}
   - {fileID: 492156453}
-  - {fileID: 586289982}

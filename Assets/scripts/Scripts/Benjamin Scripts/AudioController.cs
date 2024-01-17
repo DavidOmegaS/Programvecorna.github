@@ -10,6 +10,7 @@ public class AudioController : MonoBehaviour
     public AudioClip[] clips;
     [SerializeField] float loopdelay;
     bool CanPlay;
+    float dashtimer;
 
     // for determing which audiosource its using
 
@@ -25,12 +26,13 @@ public class AudioController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dashtimer = Time.deltaTime;
 
-      if (nPL.IsWalking == true && CanPlay == true) 
-      {
+        if (nPL.IsWalking == true && CanPlay == true) 
+        {
             StartCoroutine(AudioDelay());
-      }
-       
+        }
+    
     }
 
     IEnumerator AudioDelay()
