@@ -34,7 +34,7 @@ public class AudioController : MonoBehaviour
 
       if (nPL.IsDashing = true && dashtimer >= 1.5f)
       {
-            AS.PlayOneShot(clips[3])
+            AS.PlayOneShot(clips[3]);
             dashtimer = Time.deltaTime;
       }
     
