@@ -5243,15 +5243,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1416007335670805240, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.0799936
+      value: 938
       objectReference: {fileID: 0}
     - target: {fileID: 1416007335670805240, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4333687
+      value: 549
       objectReference: {fileID: 0}
     - target: {fileID: 1416007335670805240, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.030972937
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1416007335670805240, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -5285,6 +5285,10 @@ PrefabInstance:
       propertyPath: MenuTheme
       value: 
       objectReference: {fileID: 2019099106}
+    - target: {fileID: 1996602116676414519, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
+      propertyPath: IsmenuScene
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2417521934546703394, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
