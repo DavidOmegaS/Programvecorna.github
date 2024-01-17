@@ -46,15 +46,16 @@ public class newPlayerMovement : MonoBehaviour
             // StartCoroutine(DashAbility());
         }
 
-        if(Input.GetKeyDown(KeyCode.E) && isMoving == true)
+        if(Input.GetKey(KeyCode.E) && isMoving == true)
         {
             rb.constraints = RigidbodyConstraints2D.FreezePosition;
             isMoving = false;
         }
 
-        if(Input.GetKeyDown(KeyCode.E) && isMoving == false)
+        if(Input.GetKey(KeyCode.F) && rb.constraints == RigidbodyConstraints2D.FreezePosition)
         {
             rb.constraints = RigidbodyConstraints2D.None;
+            isMoving = true;
         }
     }
 
