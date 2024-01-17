@@ -5,7 +5,9 @@ using UnityEngine.Audio;
 
 public class AudioController : MonoBehaviour
 {
-    [SerializeField] AudioSource AS;
+    [SerializeField] AudioSource Step;
+    [SerializeField] AudioSource AmbientMusic;
+    [SerializeField] AudioSource StressMusic;
     [SerializeField] newPlayerMovement nPL;
     public AudioClip[] clips;
     [SerializeField] float loopdelay;
@@ -26,24 +28,23 @@ public class AudioController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        dashtimer = Time.deltaTime;
 
-      if (nPL.IsWalking == true && CanPlay == true) 
-      {
+        if (nPL.IsWalking == true && CanPlay == true) 
+        {
             StartCoroutine(AudioDelay());
-      }
+        }
 
-      if (nPL.IsDashing = true && dashtimer >= 1.5f)
-      {
-            AS.PlayOneShot(clips[3]);
-            dashtimer = Time.deltaTime;
-      }
-    
+
+        AmbientMusic.Play();
+
+
     }
 
     IEnumerator AudioDelay()
     {
         CanPlay = false;
-        AS.Play();
+        Step.Play();
         yield return new WaitForSeconds(loopdelay);
         CanPlay = true;
         StopCoroutine(AudioDelay());
