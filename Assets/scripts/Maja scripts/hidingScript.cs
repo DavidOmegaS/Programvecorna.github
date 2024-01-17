@@ -5,11 +5,6 @@ using UnityEngine;
 public class hidingScript : interactableObject
 {
     public GameObject player;
-    public GameObject beforeHiding;
-    public GameObject afterHiding;
-    public GameObject leaveText;
-    public GameObject hideText;
-
 
     protected override void OnCollided(GameObject collidedObject)
     {
@@ -17,20 +12,8 @@ public class hidingScript : interactableObject
         {
             OnInteract();
             player.transform.position = new Vector2(5f, 1f);
-            beforeHiding.SetActive(false);
-            afterHiding.SetActive(true);
-            leaveText.SetActive(true);
-            hideText.SetActive(false);
+            player.SetActive(false);
+            
         }
-
-        if (Input.GetKey(KeyCode.F))
-        {
-            beforeHiding.SetActive(true);
-            afterHiding.SetActive(false);
-            leaveText.SetActive(false);
-            hideText.SetActive(true);
-        }
-
     }
-
 }
