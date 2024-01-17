@@ -9,10 +9,12 @@ public class AudioController : MonoBehaviour
     [SerializeField] AudioSource AmbientMusic;
     [SerializeField] AudioSource StressMusic;
     [SerializeField] newPlayerMovement nPL;
+
+    public bool Stress;
+
     public AudioClip[] clips;
     [SerializeField] float loopdelay;
     bool CanPlay;
-    float dashtimer;
 
     // for determing which audiosource its using
 
@@ -28,16 +30,21 @@ public class AudioController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        dashtimer = Time.deltaTime;
 
         if (nPL.IsWalking == true && CanPlay == true) 
         {
             StartCoroutine(AudioDelay());
         }
 
-
-        AmbientMusic.Play();
-
+        if (Stress == true && !StressMusic.isPlaying)
+        {
+            StressMusic.Play();
+            
+        }
+        else if(Stress == false && !AmbientMusic.isPlaying)
+        {
+            AmbientMusic.Play();
+        }
 
     }
 
