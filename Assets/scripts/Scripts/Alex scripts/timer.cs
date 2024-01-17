@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class timer : MonoBehaviour
 {
     public float timeRemaining = 10;
     public bool timerIsRunning = false;
     public TMP_Text timeText;
+    public bool timeIsUp = false;
     private void Start()
     {
         // Starts the timer automatically
@@ -21,13 +23,14 @@ public class timer : MonoBehaviour
             {
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
+                timeIsUp = false;
             }
             else
             {
                 Debug.Log("Time has run out!");
                 timeRemaining = 0;
                 timerIsRunning = false;
-                TimeIsUp();
+                timeIsUp = true;
             }
         }
     }
@@ -39,8 +42,5 @@ public class timer : MonoBehaviour
         timeText.text = string.Format("{0:00}:{1:00}", minutes, seconds);
     }
 
-    void TimeIsUp()
-    {
-
-    }
+    
 }
