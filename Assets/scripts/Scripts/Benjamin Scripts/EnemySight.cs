@@ -39,7 +39,7 @@ public class EnemySight : MonoBehaviour
             StartCoroutine(ChaseTimer()); // starts the chase timer, used for chase sequence
         }
 
-      
+     
     }
 
     void OnTriggerExit2D(Collider2D collider2D)
@@ -60,12 +60,14 @@ public class EnemySight : MonoBehaviour
         hit = Physics2D.Linecast(origin.position, target.position, layerMask);
         if (CurrentlyInSight == true) // continues the chase
         {
+            AC.Stress = true;
             IsChasing = true; // David
             print("I SEE YA");
             StartCoroutine(ChaseTimer()); // loops the chasetimer
         }
         else if(CurrentlyInSight == false) // ends the chase
         {
+            AC.Stress = false;
             print("Must have been the wind.");
             IsChasing = false; // No longer chasing
             StopCoroutine(ChaseTimer());
