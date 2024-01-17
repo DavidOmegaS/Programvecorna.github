@@ -14,6 +14,9 @@ public class EnemySight : MonoBehaviour
 
     public float waitTime; // värde för hur länge den ska vänta - David
 
+    [SerializeField] AudioController AC;
+    [SerializeField] AudioSource AS;
+
 
     private void Start()
     {
@@ -24,16 +27,19 @@ public class EnemySight : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider2D) 
     {
+        AS.PlayOneShot(AC.clips[2]);
+        
         CurrentlyInSight = true; 
         int layerMask = ~(1 << enemyLayer); // Raycast hits all layers except the enemy layer, so it doesnt hit itself and block capability to see player
         hit = Physics2D.Linecast(origin.position, target.position, layerMask); // The linecast itself and the result of what it hits
         Debug.DrawLine(origin.transform.position, target.transform.position); // simulation of what the linecast looks like
-
         print(hit.collider); 
         if (hit.collider == target.GetComponent<Collider2D>() && IsChasing != true) // if the linecast hit the player object and is not chasing the player
         {
             StartCoroutine(ChaseTimer()); // starts the chase timer, used for chase sequence
         }
+
+      
     }
 
     void OnTriggerExit2D(Collider2D collider2D)

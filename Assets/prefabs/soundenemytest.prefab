@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 983198453547336048, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5036306066051660095, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Name
       value: spritetest

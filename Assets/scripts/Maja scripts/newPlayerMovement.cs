@@ -10,12 +10,14 @@ public class newPlayerMovement : MonoBehaviour
     public float CrouchSpeed;
     [SerializeField] float CrouchMultiplier;
     public bool IsCrouching;
-    bool IsDashing;
+    public bool IsDashing;
     [SerializeField] float DashSpeed;
     Animator animator;
     public bool IsWalking; // for audiocontroller - benjamin
 
     private Vector2 moveDirection;
+
+    private bool isMoving = true;
 
     private void Start()
     {
@@ -41,7 +43,18 @@ public class newPlayerMovement : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space) && !IsDashing)
         {
-            StartCoroutine(DashAbility());
+            // StartCoroutine(DashAbility());
+        }
+
+        if(Input.GetKeyDown(KeyCode.E) && isMoving == true)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezePosition;
+            isMoving = false;
+        }
+
+        if(Input.GetKeyDown(KeyCode.E) && isMoving == false)
+        {
+            rb.constraints = RigidbodyConstraints2D.None;
         }
     }
 
@@ -64,14 +77,16 @@ public class newPlayerMovement : MonoBehaviour
         if(Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == -1)
         {
             animator.SetBool("Walk", true);
+            IsWalking = true;
         }
         else
         {
-            animator.SetBool("Walk", false);    
+            animator.SetBool("Walk", false);
+            IsWalking = false;
         }
     }
 
-    IEnumerator DashAbility()
+    /*IEnumerator DashAbility()
     {
         animator.SetBool("Dash", true);
         IsDashing = true;
@@ -84,6 +99,6 @@ public class newPlayerMovement : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         animator.SetBool("Dash", false);
         IsDashing = false;
-    }
+    }*/
 
 }
