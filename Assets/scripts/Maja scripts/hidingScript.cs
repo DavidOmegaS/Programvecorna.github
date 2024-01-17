@@ -16,17 +16,6 @@ public class hidingScript : interactableObject
             OnInteract();
             player.transform.position = new Vector2(0, 0);
         }
-        AAA = true;
-        
-        if(AAA == true)
-        {
-            E.SetActive(true);
-            Debug.Log("HIDE!!!");
-        }
-        else
-        {
-            E.SetActive(false);
-        }
 
     }
 
