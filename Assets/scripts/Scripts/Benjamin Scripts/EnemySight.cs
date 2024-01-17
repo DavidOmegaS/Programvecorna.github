@@ -39,7 +39,7 @@ public class EnemySight : MonoBehaviour
             StartCoroutine(ChaseTimer()); // starts the chase timer, used for chase sequence
         }
 
-      
+     
     }
 
     void OnTriggerExit2D(Collider2D collider2D)
