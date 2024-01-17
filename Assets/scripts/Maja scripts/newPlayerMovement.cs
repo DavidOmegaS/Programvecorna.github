@@ -21,9 +21,9 @@ public class newPlayerMovement : MonoBehaviour
     {
         CrouchSpeed = moveSpeed * CrouchMultiplier;
         IsDashing = false;
-        /*animator = GetComponentInChildren<Animator>();
+        animator = GetComponentInChildren<Animator>();
         animator.SetBool("Walk", false);
-        animator.SetBool("Dash", false);*/
+        animator.SetBool("Dash", false);
     }
     void Update() //processing inputs
     {
@@ -39,10 +39,10 @@ public class newPlayerMovement : MonoBehaviour
             IsCrouching = false;
             playercollider.size = new Vector2(1, 1);
         }
-        /*if (Input.GetKey(KeyCode.Space) && !IsDashing)
+        if (Input.GetKey(KeyCode.Space) && !IsDashing)
         {
-            StartCoroutine(DashAbility());
-        }*/
+            // StartCoroutine(DashAbility());
+        }
     }
 
     void FixedUpdate() //physics calculations
@@ -61,14 +61,16 @@ public class newPlayerMovement : MonoBehaviour
     void Move()
     {
         rb.velocity = new Vector2(moveDirection.x * (IsCrouching ? CrouchSpeed : moveSpeed), moveDirection.y * (IsCrouching ? CrouchSpeed : moveSpeed));
-        /*if(Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == -1)
+        if(Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == -1)
         {
             animator.SetBool("Walk", true);
+            IsWalking = true;
         }
         else
         {
-            animator.SetBool("Walk", false);    
-        }*/
+            animator.SetBool("Walk", false);
+            IsWalking = false;
+        }
     }
 
     /*IEnumerator DashAbility()

@@ -12,15 +12,18 @@ public class Enemy_patrol : MonoBehaviour
     private float waitTime; // hur länga den har väntat
     private bool isWaiting; // om den väntar 
 
-   
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         targetpoint = 0; // sätter punkten till startpunkten
         transform.position = patrolPonits[0].position; // Sätt fiendens position till startpunkten
-       
+        
         waitTime = 0;
+
+        animator = GetComponent<Animator>();
+        animator.SetBool("EWalk", false);
 
     }
     // Update is called once per frame
@@ -45,6 +48,11 @@ public class Enemy_patrol : MonoBehaviour
         {
            
             waitTime -= Time.deltaTime; // räknar vi ner från hur länge vi har väntat
+            animator.SetBool("EWalk", false);
+        }
+        else
+        {
+            animator.SetBool("EWalk", true);
         }
 
         if (waitTime == 0 || waitTime <0) // om den har väntar lika mycket eller mer än noll
