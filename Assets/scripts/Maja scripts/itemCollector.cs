@@ -6,16 +6,38 @@ using TMPro;
 
 public class itemCollector : MonoBehaviour
 {
-    public int apples = 0;
-    TextMeshProUGUI tmp;
+    private int apples = 0;
+    private int watermelons = 0;
+    private int coins = 0;
+    public int itemsTotal = 0;
+
+    [SerializeField] 
+    private TextMeshProUGUI itemsText;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("item"))
+        if (collision.gameObject.CompareTag("apple"))
         {
             Destroy(collision.gameObject);
             apples++;
-            Debug.Log("Apples: " + apples);
+            itemsTotal++;
+            itemsText.text = "Items: " + itemsTotal;
+        }
+
+        if (collision.gameObject.CompareTag("watermelon"))
+        {
+            Destroy(collision.gameObject);
+            watermelons++;
+            itemsTotal++;
+            itemsText.text = "Items: " + itemsTotal;
+        }
+
+        if (collision.gameObject.CompareTag("coins"))
+        {
+            Destroy(collision.gameObject);
+            coins++;
+            itemsTotal++;
+            itemsText.text = "Items: " + itemsTotal;
         }
     }
 }
