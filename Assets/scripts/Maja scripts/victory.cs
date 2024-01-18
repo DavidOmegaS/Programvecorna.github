@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class victory : MonoBehaviour
 {
-    public GameObject apple1;
+    
 
     void Start()
     {

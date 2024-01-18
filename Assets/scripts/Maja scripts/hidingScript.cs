@@ -8,6 +8,7 @@ public class hidingScript : MonoBehaviour
     public float alpha = 0f;
     public float otherAlpha = 1f;
     private bool canHide;
+    public bool isHiding;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -28,6 +29,7 @@ public class hidingScript : MonoBehaviour
             {
                 player.transform.position = transform.position;
                 ChangeAlpha(player.GetComponent<Renderer>().material, alpha);
+                isHiding = true;
             }
 
         }
