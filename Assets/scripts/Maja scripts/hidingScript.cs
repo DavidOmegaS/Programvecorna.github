@@ -25,7 +25,7 @@ public class hidingScript : MonoBehaviour
     {
         if(canHide == true)
         {
-            if ( (Input.GetKey(KeyCode.E)))
+            if ((Input.GetKey(KeyCode.E)))
             {
                 player.transform.position = transform.position;
                 ChangeAlpha(player.GetComponent<Renderer>().material, alpha);

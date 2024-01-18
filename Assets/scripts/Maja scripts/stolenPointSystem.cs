@@ -19,6 +19,6 @@ public class stolenPointSystem : MonoBehaviour
 
     void Update()
     {
-        score.text = "- Apple " + appleScore + "/3            - Watermelon " + watermelonScore + "/2   - Coins " + coinScore + "/2";
+        score.text = "- Apple " + appleScore + "/3            - Watermelon " + watermelonScore + "/2   - Coins " + coinScore + "/3";
     }
 }
