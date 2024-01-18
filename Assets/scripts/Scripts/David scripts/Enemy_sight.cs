@@ -26,7 +26,7 @@ public class Enemy_sight : MonoBehaviour
         Vector2 direction = lookPonits[target.targetpoint].position - transform.position;
         transform.rotation = Quaternion.FromToRotation(Vector3.down, direction);
 
-        if (transform.rotation.z <= 0)
+        if (transform.rotation.z <= 0) // flips sprite, kind off - benjamin
         {
             spriterenderer.flipX = true;
         }
