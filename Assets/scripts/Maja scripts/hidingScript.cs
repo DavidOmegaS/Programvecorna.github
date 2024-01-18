@@ -7,7 +7,8 @@ public class hidingScript : MonoBehaviour
     public GameObject player;
     public float alpha = 0f;
     public float otherAlpha = 1f;
-    private bool canHide = false;
+    private bool canHide;
+    public bool isHiding;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -17,38 +18,26 @@ public class hidingScript : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         canHide = false;
+        ChangeAlpha(player.GetComponent<Renderer>().material, otherAlpha);
     }
 
     private void Update()
     {
         if(canHide == true)
         {
-            if (gameObject.name.Equals("tunna") && (Input.GetKey(KeyCode.E)))
+            if ( (Input.GetKey(KeyCode.E)))
             {
-                player.transform.position = new Vector2(5f, 1f);
+                player.transform.position = transform.position;
                 ChangeAlpha(player.GetComponent<Renderer>().material, alpha);
+                isHiding = true;
             }
-        }
-        else
-        {
-            if (gameObject.name.Equals("tunna") && (Input.GetKey(KeyCode.E)))
-            {
-                ChangeAlpha(player.GetComponent<Renderer>().material, otherAlpha);
-            }
+
         }
     }
 
-
-
-
-
-
-
-
-
-
     void ChangeAlpha(Material mat, float alphaVal)
     {
+        print(alphaVal);
         Color oldColor = mat.color;
         Color newColor = new Color(oldColor.r, oldColor.g, oldColor.b, alphaVal);
         mat.SetColor("_Color", newColor);
