@@ -9,6 +9,7 @@ public class Enemy_sight : MonoBehaviour
 
     public Enemy_patrol target;
     public int lookTarget;
+    [SerializeField] SpriteRenderer spriterenderer;
 
    
 
@@ -25,7 +26,14 @@ public class Enemy_sight : MonoBehaviour
         Vector2 direction = lookPonits[target.targetpoint].position - transform.position;
         transform.rotation = Quaternion.FromToRotation(Vector3.down, direction);
 
-       
+        if (transform.rotation.z <= 0)
+        {
+            spriterenderer.flipX = true;
+        }
+        else
+        {
+            spriterenderer.flipX = false;
+        }
       
     }
 }
