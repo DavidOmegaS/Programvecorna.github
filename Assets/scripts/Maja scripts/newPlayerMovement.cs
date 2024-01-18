@@ -22,6 +22,8 @@ public class newPlayerMovement : MonoBehaviour
 
     private bool isMoving = true;
 
+    public bool isfacingright; // -David
+
     private void Start()
     {
         CrouchSpeed = moveSpeed * CrouchMultiplier;
