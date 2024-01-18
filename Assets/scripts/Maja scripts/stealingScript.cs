@@ -6,14 +6,17 @@ public class stealingScript : interactableObject
 {
     public GameObject item;
     stolenPointSystem sps;
+    public int itemsStolen = 0;
     protected override void OnCollided(GameObject collidedObject)
     {
         if (Input.GetKey(KeyCode.E) && gameObject.tag == "item")
         {
-            OnInteract();
             item.SetActive(false);
+            itemsStolen++;
+            print("item stolen");
             
-            if (gameObject.layer == 10)
+            
+            /*if (gameObject.layer == 10)
             {
                 sps.appleScore+= 1;
             }
@@ -21,7 +24,7 @@ public class stealingScript : interactableObject
             if(gameObject.layer == 11)
             {
                 sps.watermelonScore+= 1;
-            }
+            }*/
         }
         
     }
