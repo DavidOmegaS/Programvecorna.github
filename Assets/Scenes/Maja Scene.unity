@@ -896,6 +896,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: stealList
       objectReference: {fileID: 0}
+    - target: {fileID: 7064545714115251698, guid: 77fce7393a748d64593cf5c7af380174, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

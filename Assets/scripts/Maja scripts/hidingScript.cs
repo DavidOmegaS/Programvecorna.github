@@ -17,30 +17,17 @@ public class hidingScript : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         canHide = false;
+        ChangeAlpha(player.GetComponent<Renderer>().material, otherAlpha);
     }
 
     private void Update()
     {
         if(canHide == true)
         {
-            if (gameObject.name.Equals("tunna") && (Input.GetKey(KeyCode.E)))
+            if ( (Input.GetKey(KeyCode.E)))
             {
-                player.transform.position = new Vector2(5f, 1f);
+                player.transform.position = transform.position;
                 ChangeAlpha(player.GetComponent<Renderer>().material, alpha);
-            }
-            
-            if (gameObject.name.Equals("hayball") && (Input.GetKey(KeyCode.E)))
-            {
-                player.transform.position = new Vector2(2.5f, 0.7f);
-                ChangeAlpha(player.GetComponent<Renderer>().material, alpha);
-            }
-
-        }
-        else
-        {
-            if (gameObject.name.Equals("tunna"))
-            {
-                ChangeAlpha(player.GetComponent<Renderer>().material, otherAlpha);
             }
 
         }
@@ -48,6 +35,7 @@ public class hidingScript : MonoBehaviour
 
     void ChangeAlpha(Material mat, float alphaVal)
     {
+        print(alphaVal);
         Color oldColor = mat.color;
         Color newColor = new Color(oldColor.r, oldColor.g, oldColor.b, alphaVal);
         mat.SetColor("_Color", newColor);

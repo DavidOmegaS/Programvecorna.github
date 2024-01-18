@@ -6,15 +6,15 @@ using TMPro;
 
 public class stolenPointSystem : MonoBehaviour
 {
-    public static int appleScore = 0;
-    public static int watermelonScore = 0;
-    public static int coinScore = 0;
-
     public TextMeshProUGUI score;
+
+    public int appleScore = 0;
+    public int watermelonScore = 0;
+    public  int coinScore = 0;
 
     void Start()
     {
-        score = GetComponent<TextMeshProUGUI>();
+        //score = GetComponent<TextMeshProUGUI>();
     }
 
     void Update()
