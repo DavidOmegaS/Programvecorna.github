@@ -204,7 +204,7 @@ Transform:
   m_GameObject: {fileID: 71681688}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5, y: 0.77, z: 0}
+  m_LocalPosition: {x: 2.5, y: 0.5, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -283,7 +283,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.015511036, y: -0.0027957559}
+  m_Offset: {x: -0.022647321, y: -0.012310788}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -294,7 +294,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.67940664, y: 0.5678985}
+  m_Size: {x: 0.80786, y: 0.7391697}
   m_EdgeRadius: 0
 --- !u!1 &182898217 stripped
 GameObject:
@@ -686,7 +686,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &805062448
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1028,19 +1028,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_Size.x
-      value: 0.89215827
+      value: 0.8065226
       objectReference: {fileID: 0}
     - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_Size.y
-      value: 1.3312277
+      value: 1.2360771
       objectReference: {fileID: 0}
     - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_Offset.x
-      value: 0.05392085
+      value: 0.06819332
       objectReference: {fileID: 0}
     - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_Offset.y
-      value: -0.09628743
+      value: -0.14386272
       objectReference: {fileID: 0}
     - target: {fileID: 8251023455995634548, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -1076,7 +1076,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9061612939119823976, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.07
       objectReference: {fileID: 0}
     - target: {fileID: 9061612939119823976, guid: 96200c4088177bf4dbc5b4f1376c27ad, type: 3}
       propertyPath: m_LocalPosition.z
