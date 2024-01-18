@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using TMPro;
 public class SecretCodeScript : MonoBehaviour
 {
-
+    //skit i detta scriptet jag orkade inte göra mer
 
     public TMP_InputField mainInputfield;
     // Start is called before the first frame update
@@ -20,7 +20,7 @@ public class SecretCodeScript : MonoBehaviour
     void Update()
     {
 
-        if (mainInputfield.text==("Heavy Metal"))
+        if (mainInputfield.text==("OUB"))
         {
             print("yeeeeeeeee");
         }

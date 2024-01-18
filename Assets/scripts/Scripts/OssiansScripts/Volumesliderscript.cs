@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Volumesliderscript : MonoBehaviour
 {
-
+    //ändrar volymen (har dock ej testat med ljud)
 
 
     public Slider myvolumeslider;
@@ -20,7 +20,7 @@ public class Volumesliderscript : MonoBehaviour
     {
 
 
-        AudioListener.volume = myvolumeslider.value;
+        AudioListener.volume = myvolumeslider.value;//gör att volymen på slidern är volymen i spelet
 
     }
 
