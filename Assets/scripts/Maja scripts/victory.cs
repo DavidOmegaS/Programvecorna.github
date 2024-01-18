@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class victory : MonoBehaviour
 {
-    public GameObject apple1;
+    stealingScript ss;
+    stealingScript2 ss2;
+    public GameObject victoryScreen;
 
     void Start()
     {
@@ -13,6 +15,9 @@ public class victory : MonoBehaviour
 
     void Update()
     {
-        
+        if(ss.itemsStolen == 1)
+        {
+            victoryScreen.SetActive(true);
+        }
     }
 }
