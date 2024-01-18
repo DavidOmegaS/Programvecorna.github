@@ -21,7 +21,7 @@ public class itemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             apples++;
             itemsTotal++;
-            itemsText.text = "Items: " + itemsTotal;
+            itemsText.text = "Apples: " + apples + " Watermelons: " + watermelons + " Coins: " + coins;
         }
 
         if (collision.gameObject.CompareTag("watermelon"))
@@ -29,7 +29,7 @@ public class itemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             watermelons++;
             itemsTotal++;
-            itemsText.text = "Items: " + itemsTotal;
+            itemsText.text = "Apples: " + apples + " Watermelons: " + watermelons + " Coins: " + coins;
         }
 
         if (collision.gameObject.CompareTag("coins"))
@@ -37,7 +37,7 @@ public class itemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             coins++;
             itemsTotal++;
-            itemsText.text = "Items: " + itemsTotal;
+            itemsText.text = "Apples: " + apples + " Watermelons: " + watermelons + " Coins: " + coins;
         }
     }
 }

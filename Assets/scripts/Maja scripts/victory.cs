@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class victory : MonoBehaviour
 {
-    stealingScript ss;
-    stealingScript2 ss2;
-    public GameObject victoryScreen;
+    itemCollector itemScript;
+    private bool winner;
 
     void Start()
     {
@@ -15,9 +14,9 @@ public class victory : MonoBehaviour
 
     void Update()
     {
-        if(ss.itemsStolen == 1)
+        if (itemScript.itemsTotal == 12)
         {
-            victoryScreen.SetActive(true);
+            winner = true;
         }
     }
 }
