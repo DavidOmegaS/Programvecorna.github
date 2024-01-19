@@ -108,11 +108,7 @@ public class newPlayerMovement : MonoBehaviour
         IsDashing = true;
         animator.SetBool("Dash", true);
         moveSpeed += DashSpeed;
-        yield return new WaitForSeconds(0.05f);
-        playercollider.enabled = false;
-        yield return new WaitForSeconds(0.3f);
-        playercollider.enabled = true;
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(1f);
         animator.SetBool("Dash", false);
         moveSpeed -= DashSpeed;
         IsDashing = false;
