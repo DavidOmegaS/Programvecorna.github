@@ -40,11 +40,8 @@ public class itemCollector : MonoBehaviour
             itemsTotal++;
             itemsText.text = "- Apples " + apples + "/4            - Watermelons " + watermelons + "/3 - Coin bags " + coins + "/5";
         }
-    }
 
-    void Update()
-    {
-        if (itemsTotal == 12)
+        if (collision.gameObject.CompareTag("exit") && itemsTotal == 12)
         {
             Debug.Log("Victory!!");
             victoryScreen.SetActive(true);

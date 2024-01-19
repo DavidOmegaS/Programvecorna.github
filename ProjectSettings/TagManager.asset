@@ -9,6 +9,7 @@ TagManager:
   - apple
   - watermelon
   - coins
+  - exit
   layers:
   - Default
   - TransparentFX
