@@ -6,6 +6,10 @@ TagManager:
   tags:
   - hideout
   - item
+  - apple
+  - watermelon
+  - coins
+  - exit
   layers:
   - Default
   - TransparentFX
@@ -17,9 +21,9 @@ TagManager:
   - PlayerCharacter
   - Obstacle
   - Test
-  - apple
-  - watermelon
-  - coin
+  - 
+  - 
+  - 
   - 
   - 
   - 

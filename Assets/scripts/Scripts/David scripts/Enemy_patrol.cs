@@ -67,8 +67,6 @@ public class Enemy_patrol : MonoBehaviour
         }
 
         
-
-        
         
     }
     void IncresTargetint()

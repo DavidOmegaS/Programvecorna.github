@@ -33,4 +33,12 @@ public class EscapeKey : MonoBehaviour
         }
 
     }
+
+    //gjorde en resume button - Maja
+    public void resume()
+    {
+        pausemenu.GetComponent<Canvas>().enabled = false;
+        Time.timeScale = 1;
+        IsPaused = false;
+    }
 }
