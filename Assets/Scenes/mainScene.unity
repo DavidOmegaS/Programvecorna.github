@@ -5906,7 +5906,7 @@ Transform:
   m_GameObject: {fileID: 486792885}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.3, y: -2.6, z: 0}
+  m_LocalPosition: {x: -2.15, y: -2.52, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6901,6 +6901,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 460839450797635471, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+      propertyPath: orthographic size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1328644207544318578, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: m_LocalPosition.x
       value: -35.71
@@ -7327,7 +7331,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4733175416534440092, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: wait
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4733175416534440092, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: patrolPonits.Array.size
@@ -12916,7 +12920,7 @@ Transform:
   m_GameObject: {fileID: 1008314345}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: -4, z: 0}
+  m_LocalPosition: {x: -4.847, y: -4.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18067,7 +18071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4550727678499885041, guid: 63e410ce5fae20045a7bb0f52331aff7, type: 3}
       propertyPath: timeRemaining
-      value: 600
+      value: 360
       objectReference: {fileID: 0}
     - target: {fileID: 5420673880358386295, guid: 63e410ce5fae20045a7bb0f52331aff7, type: 3}
       propertyPath: m_Pivot.x
@@ -24626,7 +24630,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4733175416534440092, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: wait
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4733175416534440092, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: patrolPonits.Array.size
