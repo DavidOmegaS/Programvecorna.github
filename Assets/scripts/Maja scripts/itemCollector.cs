@@ -22,7 +22,7 @@ public class itemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             apples++;
             itemsTotal++;
-            itemsText.text = "- Apples " + apples + "/4            - Watermelons " + watermelons + "/3 - Coin bags " + coins + "/5";
+            itemsText.text = "- Apples " + apples + "/4            - Watermelons " + watermelons + "/4 - Coin bags " + coins + "/5";
         }
 
         if (collision.gameObject.CompareTag("watermelon"))
@@ -30,7 +30,7 @@ public class itemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             watermelons++;
             itemsTotal++;
-            itemsText.text = "- Apples " + apples + "/4            - Watermelons " + watermelons + "/3 - Coin bags " + coins + "/5";
+            itemsText.text = "- Apples " + apples + "/4            - Watermelons " + watermelons + "/4 - Coin bags " + coins + "/5";
         }
 
         if (collision.gameObject.CompareTag("coins"))
@@ -38,10 +38,10 @@ public class itemCollector : MonoBehaviour
             Destroy(collision.gameObject);
             coins++;
             itemsTotal++;
-            itemsText.text = "- Apples " + apples + "/4            - Watermelons " + watermelons + "/3 - Coin bags " + coins + "/5";
+            itemsText.text = "- Apples " + apples + "/4            - Watermelons " + watermelons + "/4 - Coin bags " + coins + "/5";
         }
 
-        if (collision.gameObject.CompareTag("exit") && itemsTotal == 12)
+        if (collision.gameObject.CompareTag("exit") && itemsTotal == 13)
         {
             Debug.Log("Victory!!");
             victoryScreen.SetActive(true);
