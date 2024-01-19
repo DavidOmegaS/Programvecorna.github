@@ -711,6 +711,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee8cb0d8a95a78048948a3382d7f9905, type: 3}
+--- !u!1 &1479044828 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2152107423099062394, guid: 2982d60b5a3d7f44e9f42b37e41709cd, type: 3}
+  m_PrefabInstance: {fileID: 689271180}
+  m_PrefabAsset: {fileID: 0}
 --- !u!212 &1694940417 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 8345986032672033494, guid: 7b8828232d186c44499ba02054a64041, type: 3}
@@ -1011,6 +1016,10 @@ PrefabInstance:
       propertyPath: AmbientMusic
       value: 
       objectReference: {fileID: 1733730696}
+    - target: {fileID: 1996602116676414519, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
+      propertyPath: victoryscreen
+      value: 
+      objectReference: {fileID: 1479044828}
     - target: {fileID: 2417521934546703394, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
