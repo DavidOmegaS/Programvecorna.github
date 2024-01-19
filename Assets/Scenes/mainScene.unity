@@ -12459,11 +12459,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!82 &1016404721 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 4337097875864692273, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
-  m_PrefabInstance: {fileID: 1534031139}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1018114020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17400,7 +17395,7 @@ PrefabInstance:
     - target: {fileID: 1996602116676414519, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: Step
       value: 
-      objectReference: {fileID: 1016404721}
+      objectReference: {fileID: 1997008639}
     - target: {fileID: 5588691216687956927, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -22373,7 +22368,7 @@ AudioSource:
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
-  Loop: 1
+  Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
