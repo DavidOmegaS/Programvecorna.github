@@ -11,6 +11,8 @@ public class AudioController : MonoBehaviour
     [SerializeField] AudioSource MenuTheme;
     [SerializeField] newPlayerMovement nPL;
 
+    [SerializeField] GameObject victoryscreen;
+
     public bool Stress;
 
     public AudioClip[] clips;
@@ -52,8 +54,14 @@ public class AudioController : MonoBehaviour
             }
         }
 
-        if (IsmenuScene == true && !MenuTheme.isPlaying)
+        if (IsmenuScene == true && !MenuTheme.isPlaying || victoryscreen == true && !StressMusic.isPlaying && !AmbientMusic.isPlaying)
         {
+            MenuTheme.Play();
+        }
+        else if (victoryscreen == true && (StressMusic.isPlaying || AmbientMusic.isPlaying)) 
+        {
+            StressMusic.Pause();
+            AmbientMusic.Pause();
             MenuTheme.Play();
         }
     }
