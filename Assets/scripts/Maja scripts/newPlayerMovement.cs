@@ -17,6 +17,7 @@ public class newPlayerMovement : MonoBehaviour
 
     [SerializeField] AudioSource AS;
     [SerializeField] AudioController AC;
+    [SerializeField] SpriteRenderer renderer;
 
     private Vector2 moveDirection;
 
@@ -89,6 +90,15 @@ public class newPlayerMovement : MonoBehaviour
         {
             animator.SetBool("Walk", false);
             IsWalking = false;
+        }
+
+        if (Input.GetAxisRaw("Horizontal") == 1)
+        {
+            renderer.flipX = true;
+        }
+        else if(Input.GetAxisRaw("Horizontal") == -1)
+        {
+            renderer.flipX = false;
         }
     }
 

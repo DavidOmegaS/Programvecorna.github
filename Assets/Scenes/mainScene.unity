@@ -6958,6 +6958,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1534031140}
     - target: {fileID: 6045715297128662344, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+      propertyPath: renderer
+      value: 
+      objectReference: {fileID: 1886412346}
+    - target: {fileID: 6045715297128662344, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: DashSpeed
       value: 6
       objectReference: {fileID: 0}
@@ -6968,7 +6972,7 @@ PrefabInstance:
     - target: {fileID: 6045715297128662344, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: playercollider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1886412345}
     - target: {fileID: 7386436041307757033, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: m_Name
       value: PlayerV2
@@ -22585,6 +22589,16 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1886412345 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 8669200132083057223, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+  m_PrefabInstance: {fileID: 546183785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1886412346 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 1858220895881690716, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+  m_PrefabInstance: {fileID: 546183785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1891601943
 GameObject:
   m_ObjectHideFlags: 0
