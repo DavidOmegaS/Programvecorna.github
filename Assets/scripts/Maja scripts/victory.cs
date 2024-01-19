@@ -5,7 +5,7 @@ using UnityEngine;
 public class victory : MonoBehaviour
 {
     itemCollector itemScript;
-    private bool winner;
+    public GameObject victoryScreen;
 
     void Start()
     {
@@ -16,7 +16,7 @@ public class victory : MonoBehaviour
     {
         if (itemScript.itemsTotal == 12)
         {
-            winner = true;
+            Debug.Log("Victory!!");
         }
     }
 }
