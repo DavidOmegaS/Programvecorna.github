@@ -18573,6 +18573,10 @@ PrefabInstance:
       propertyPath: Step
       value: 
       objectReference: {fileID: 546183786}
+    - target: {fileID: 1996602116676414519, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
+      propertyPath: victoryscreen
+      value: 
+      objectReference: {fileID: 213566664}
     - target: {fileID: 5588691216687956927, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_Name
       value: AudioManager
