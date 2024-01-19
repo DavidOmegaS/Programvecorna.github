@@ -48,6 +48,7 @@ public class itemCollector : MonoBehaviour
         {
             Debug.Log("Victory!!");
             victoryScreen.SetActive(true);
+            Time.timeScale = 0;
         }
         else
         {
