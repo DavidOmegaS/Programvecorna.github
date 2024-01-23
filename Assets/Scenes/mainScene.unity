@@ -1590,8 +1590,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553372836514749290, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1610,13 +1614,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7889175099622362286, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8242104746982364455, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_LocalScale.x
@@ -1738,8 +1746,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553372836514749290, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4564,8 +4576,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553372836514749290, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4848,13 +4864,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (6)
       objectReference: {fileID: 0}
     - target: {fileID: 7889175099622362286, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8242104746982364455, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_LocalScale.x
@@ -6911,8 +6931,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553372836514749290, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6976,6 +7000,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1858220895881690716, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1858220895881690716, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
@@ -7015,7 +7043,10 @@ PrefabInstance:
     - {fileID: 7981773401009929598, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7386436041307757033, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 546183793}
   m_SourcePrefab: {fileID: 100100000, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
 --- !u!82 &546183786 stripped
 AudioSource:
@@ -7043,6 +7074,58 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7386436041307757033, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
   m_PrefabInstance: {fileID: 546183785}
   m_PrefabAsset: {fileID: 0}
+--- !u!212 &546183793
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 546183789}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 0
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &546492375
 GameObject:
   m_ObjectHideFlags: 0
@@ -8589,6 +8672,11 @@ Transform:
   - {fileID: 546492376}
   m_Father: {fileID: 1253885389}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &649903850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8639008688933627628, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+  m_PrefabInstance: {fileID: 546183785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &650728786
 GameObject:
   m_ObjectHideFlags: 0
@@ -12427,8 +12515,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553372836514749290, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13414,13 +13506,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (4)
       objectReference: {fileID: 0}
     - target: {fileID: 7889175099622362286, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8242104746982364455, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_LocalScale.x
@@ -13550,13 +13646,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7889175099622362286, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8242104746982364455, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_LocalScale.x
@@ -14188,13 +14288,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7889175099622362286, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8242104746982364455, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_LocalScale.x
@@ -14405,13 +14509,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7889175099622362286, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8242104746982364455, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_LocalScale.x
@@ -15150,8 +15258,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553372836514749290, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -16985,8 +17097,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553372836514749290, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -20821,14 +20937,14 @@ PrefabInstance:
     - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 546183789}
+      objectReference: {fileID: 649903850}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball
       objectReference: {fileID: 0}
     - target: {fileID: 7889175099622362286, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8242104746982364455, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_LocalScale.x
@@ -21929,8 +22045,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5553372836514749290, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
       propertyPath: m_SortingOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 649903850}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
