@@ -6,6 +6,8 @@ public class Ai_sight : MonoBehaviour
 {
    public Enemy_chase chase;
     public EnemySight sight;
+
+    public float t = 75;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,12 +21,13 @@ public class Ai_sight : MonoBehaviour
         if (sight.CurrentlyInSight == true)
         {
             Vector2 direction = chase.playerTarget.position - transform.position;
-            transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(Vector3.forward, direction), t * Time.deltaTime);
         }
         else if (sight.IsChasing == false)
         {
             Vector2 direction = chase.startPoint.position - transform.position;
-            transform.rotation = Quaternion.FromToRotation(Vector3.up, direction);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(Vector3.forward, direction), t * Time.deltaTime);
+
         }
        
     }

@@ -29,11 +29,6 @@ public class Enemy_sight : MonoBehaviour
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(Vector3.forward, direction), t * Time.deltaTime);
         
 
-        
-
-        if (transform.rotation.z <= 0) // flips sprite, kind off - benjamin
-
-        transform.rotation = Quaternion.FromToRotation(Vector3.down, direction);
 
         if (transform.rotation.z <= 0) // flips sprite, kinda off - benjamin
 

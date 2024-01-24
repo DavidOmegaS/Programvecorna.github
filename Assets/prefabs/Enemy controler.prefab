@@ -271,7 +271,7 @@ GameObject:
   - component: {fileID: 4388335786859765341}
   - component: {fileID: 7787134980365912907}
   m_Layer: 6
-  m_Name: GameObject
+  m_Name: Sight PivitPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
