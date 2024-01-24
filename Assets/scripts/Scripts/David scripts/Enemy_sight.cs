@@ -11,7 +11,7 @@ public class Enemy_sight : MonoBehaviour
     public int lookTarget;
     [SerializeField] SpriteRenderer spriterenderer;
 
-   
+    public float t = 75;
 
     // Start is called before the first frame update
     void Start()
@@ -24,10 +24,11 @@ public class Enemy_sight : MonoBehaviour
     void Update()
     {
         Vector2 direction = lookPonits[target.targetpoint].position - transform.position;
-        transform.rotation = Quaternion.FromToRotation(Vector3.down, direction);
+       // transform.rotation = Quaternion.FromToRotation(Vector3.down, direction);
+        transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(Vector3.forward, direction), t * Time.deltaTime);
+        
 
-
-
+        
 
         if (transform.rotation.z <= 0) // flips sprite, kind off - benjamin
         {
