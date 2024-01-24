@@ -1592,6 +1592,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1610,6 +1614,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (1)
@@ -1740,6 +1748,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3383,7 +3395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 262867785}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3399,7 +3411,7 @@ Transform:
   m_GameObject: {fileID: 262867784}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.47, y: -1.5, z: 0}
+  m_LocalPosition: {x: 3.12, y: 5.19, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4507,6 +4519,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &350571872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8639008688933627628, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+  m_PrefabInstance: {fileID: 546183785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &356263871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4571,6 +4588,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -4853,6 +4874,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (6)
@@ -5283,7 +5308,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 408198751}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5299,7 +5324,7 @@ Transform:
   m_GameObject: {fileID: 408198750}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.47, y: -1.5, z: 0}
+  m_LocalPosition: {x: 1.08, y: 3.86, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6918,6 +6943,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6942,11 +6971,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1328644207544318578, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -35.71
+      value: 9.2
       objectReference: {fileID: 0}
     - target: {fileID: 1328644207544318578, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 22.83
+      value: 43.18
       objectReference: {fileID: 0}
     - target: {fileID: 1328644207544318578, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12446,6 +12475,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13431,6 +13464,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (4)
@@ -13567,6 +13604,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (3)
@@ -13906,7 +13947,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1118075649}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13922,7 +13963,7 @@ Transform:
   m_GameObject: {fileID: 1118075648}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.25, y: 4.72, z: 0}
+  m_LocalPosition: {x: 8.19, y: -0.41, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14205,6 +14246,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (2)
@@ -14422,6 +14467,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball (5)
@@ -15169,6 +15218,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17004,6 +17057,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -17697,7 +17754,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1450185430
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18159,7 +18216,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1506904821}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Point 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18175,7 +18232,7 @@ Transform:
   m_GameObject: {fileID: 1506904820}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.45, y: 5.14, z: 0}
+  m_LocalPosition: {x: 2.84, y: -1.02, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18625,6 +18682,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5588691216687956927, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -18929,7 +18990,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1537085041}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Point 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18945,7 +19006,7 @@ Transform:
   m_GameObject: {fileID: 1537085040}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.6, y: -0, z: 0}
+  m_LocalPosition: {x: 9.29, y: 5.44, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19223,6 +19284,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 738746964813366044, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 756090562516408323, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Size.x
       value: 1.1872835
@@ -19243,9 +19308,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 2.69
       objectReference: {fileID: 0}
+    - target: {fileID: 2748071763506888157, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902275447161917074, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3837444662278713062, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203497347983091824, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4388335786859765341, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19291,9 +19368,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy controler (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5036306066051660095, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061366622511845455, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5695619873971670383, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326292966168232475, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6858678893942918347, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalScale.x
@@ -20857,6 +20946,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 552510870}
     m_Modifications:
+    - target: {fileID: 6554169937963175257, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     - target: {fileID: 7784899052222862230, guid: 4fe69f2667dfa3f4b9711bce04af1bc4, type: 3}
       propertyPath: m_Name
       value: hayball
@@ -21966,6 +22059,10 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 9203165488262623041, guid: 5c8748b6cb9dd0c4b826c103a5ab9c66, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 350571872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23365,6 +23462,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 738746964813366044, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 756090562516408323, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Size.x
       value: 1.1872835
@@ -23379,15 +23480,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1603653856763854124, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.36
+      value: 4.57
       objectReference: {fileID: 0}
     - target: {fileID: 1603653856763854124, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalPosition.y
       value: 2.11
       objectReference: {fileID: 0}
+    - target: {fileID: 2748071763506888157, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2902275447161917074, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 3837444662278713062, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_SortingOrder
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4203497347983091824, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4388335786859765341, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalRotation.w
@@ -23433,9 +23546,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy controler (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5036306066051660095, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5061366622511845455, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5695619873971670383, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6326292966168232475, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6858678893942918347, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_LocalScale.x

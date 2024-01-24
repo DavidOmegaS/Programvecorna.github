@@ -5,8 +5,10 @@ using UnityEngine;
 public class Enemy_patrol : MonoBehaviour
 {
     public Transform[] patrolPonits; // en lista för dom olika punkterna fienden ska gå till 
+    public Transform startPoint;
     public int targetpoint; // vilken specifik punkt vi vill att den ska gå till 
     public float speed; // vilken hastighet den ska gå
+    public bool isWalking;
 
     public float wait = 2; // hur länge den ska vänta
     private float waitTime; // hur länga den har väntat
@@ -18,7 +20,12 @@ public class Enemy_patrol : MonoBehaviour
     void Start()
     {
         targetpoint = 0; // sätter punkten till startpunkten
-        transform.position = patrolPonits[0].position; // Sätt fiendens position till startpunkten
+
+       
+            transform.position = patrolPonits[0].position; // Sätt fiendens position till startpunkten
+       
+      
+        
         
         waitTime = 0;
 
@@ -33,6 +40,9 @@ public class Enemy_patrol : MonoBehaviour
     }
     void Patrol()
     {
+       
+            
+        
         transform.position = Vector2.MoveTowards(transform.position, patrolPonits[targetpoint].position, speed * Time.deltaTime); //Gör att fienden går till den nuvarande punkten
 
         if (transform.position == patrolPonits[targetpoint].position ) // Om fienden står vid den punkten den ska stå på

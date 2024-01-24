@@ -11,19 +11,22 @@ public class ImageAnimator : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-    }
+    } 
 
-    // Update is called once per frame
     void Update()
     {
         if(VictoryScreen == true)
         {
             animator.SetBool("victoryscreen", true);
         }
-        
+
         if (GameOverScreen == true)
         {
             animator.SetBool("gameoverscreen", true);
+            if (Input.GetKey(KeyCode.Space))
+            {
+                animator.SetBool("gameoverscreen", false);
+            }
         }
     }
 }
