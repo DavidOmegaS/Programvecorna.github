@@ -27,14 +27,13 @@ public class EnemySight : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collider2D) 
     {
-        
-        CurrentlyInSight = true; 
         int layerMask = ~(1 << enemyLayer); // Raycast hits all layers except the enemy layer, so it doesnt hit itself and block capability to see player
         hit = Physics2D.Linecast(origin.position, target.position, layerMask); // The linecast itself and the result of what it hits
         Debug.DrawLine(origin.transform.position, target.transform.position); // simulation of what the linecast looks like
         print(hit.collider); 
-        if (hit.collider == target.GetComponent<Collider2D>() && IsChasing != true) // if the linecast hit the player object and is not chasing the player
+        if (hit.collider == target.GetComponent<BoxCollider2D>() && IsChasing != true) // if the linecast hit the player object and is not chasing the player
         {
+            CurrentlyInSight = true;
             AS.PlayOneShot(AC.clips[2]);
             StartCoroutine(ChaseTimer()); // starts the chase timer, used for chase sequence
         }

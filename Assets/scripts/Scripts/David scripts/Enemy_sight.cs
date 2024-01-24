@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Enemy_sight : MonoBehaviour
 {
-    public Transform[] lookPonits; // en lista för dom olika punkterna fienden ska titta på 
-    //public int targetpoint; // vilken specifik punkt vi vill att den ska titta på
+    public Transform[] lookPonits; // en lista fï¿½r dom olika punkterna fienden ska titta pï¿½ 
+    //public int targetpoint; // vilken specifik punkt vi vill att den ska titta pï¿½
 
     public Enemy_patrol target;
     public int lookTarget;
@@ -24,6 +24,7 @@ public class Enemy_sight : MonoBehaviour
     void Update()
     {
         Vector2 direction = lookPonits[target.targetpoint].position - transform.position;
+
        // transform.rotation = Quaternion.FromToRotation(Vector3.down, direction);
         transform.rotation = Quaternion.RotateTowards(transform.rotation, Quaternion.LookRotation(Vector3.forward, direction), t * Time.deltaTime);
         
@@ -31,6 +32,11 @@ public class Enemy_sight : MonoBehaviour
         
 
         if (transform.rotation.z <= 0) // flips sprite, kind off - benjamin
+
+        transform.rotation = Quaternion.FromToRotation(Vector3.down, direction);
+
+        if (transform.rotation.z <= 0) // flips sprite, kinda off - benjamin
+
         {
             spriterenderer.flipX = true;
         }

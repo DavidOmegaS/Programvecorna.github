@@ -17,7 +17,7 @@ public class newPlayerMovement : MonoBehaviour
 
     [SerializeField] AudioSource AS;
     [SerializeField] AudioController AC;
-    [SerializeField] SpriteRenderer renderer;
+    SpriteRenderer renderer;
 
     private Vector2 moveDirection;
 
@@ -29,6 +29,7 @@ public class newPlayerMovement : MonoBehaviour
     {
         CrouchSpeed = moveSpeed * CrouchMultiplier;
         animator = GetComponentInChildren<Animator>(); // put a empty object with a sprite to animate
+        renderer = GetComponentInChildren<SpriteRenderer>();
         animator.SetBool("Walk", false);
         animator.SetBool("Dash", false);
     }
@@ -63,6 +64,16 @@ public class newPlayerMovement : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.None;
             isMoving = true;
         }*/
+
+        if (Input.GetKeyDown(KeyCode.Home) && gameObject.layer == 0)
+        {
+            print("Activating god mode");
+            gameObject.layer = 6;
+        }
+        else if (Input.GetKeyDown(KeyCode.Home))
+        {
+            gameObject.layer = 0;
+        }
     }
 
     void FixedUpdate() //physics calculations
@@ -108,9 +119,10 @@ public class newPlayerMovement : MonoBehaviour
         IsDashing = true;
         animator.SetBool("Dash", true);
         moveSpeed += DashSpeed;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.4f);
         animator.SetBool("Dash", false);
         moveSpeed -= DashSpeed;
+        yield return new WaitForSeconds(0.6f);
         IsDashing = false;
         StopCoroutine(DashAbility());
     }
