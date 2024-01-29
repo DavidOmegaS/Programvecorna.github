@@ -23,10 +23,6 @@ public class ImageAnimator : MonoBehaviour
         if (GameOverScreen == true)
         {
             animator.SetBool("gameoverscreen", true);
-            if (Input.GetKey(KeyCode.Space))
-            {
-                animator.SetBool("gameoverscreen", false);
-            }
         }
     }
 }
