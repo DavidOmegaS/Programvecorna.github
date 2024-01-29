@@ -38,7 +38,7 @@ public class Enemy_chase : MonoBehaviour
     {
         if (seeker.IsDone())
         {
-            if (sight.CurrentlyInSight) // Om fienden ser spelaren
+            if (sight.IsChasing) // Om fienden ser spelaren
             {
                 seeker.StartPath(rb.position, playerTarget.position, OnPathComplete); // Startar path ifrån fienden poistion till spellarens position
             }
