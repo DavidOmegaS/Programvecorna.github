@@ -58,7 +58,7 @@ public class AudioController : MonoBehaviour
         {
             MenuTheme.Play();
         }
-        else if (victoryscreen == true && !MenuTheme.isPlaying) 
+        else if (victoryscreen.GetComponent<Canvas>().isActiveAndEnabled == true && !MenuTheme.isPlaying) 
         {
             StressMusic.Pause();
             AmbientMusic.Pause();
