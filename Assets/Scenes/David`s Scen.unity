@@ -1011,10 +1011,18 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3390556741889362290, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: fab9a44847f50ee4494462231abd3f63, type: 3}
     - target: {fileID: 4358262270647501571, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 6045715297128662344, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+      propertyPath: AC
+      value: 
+      objectReference: {fileID: 195732367}
     - target: {fileID: 7158840462672466897, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: m_Layer
       value: 7
@@ -1299,6 +1307,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1328644207544318578, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
   m_PrefabInstance: {fileID: 286347535}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &622955643 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3390556741889362290, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+  m_PrefabInstance: {fileID: 286347535}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &622955644 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6045715297128662344, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+  m_PrefabInstance: {fileID: 286347535}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b69ea6c6c8964a546abcf8210a56ce38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &702500996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2211,9 +2235,9 @@ MonoBehaviour:
   enemyLayer: 6
   IsChasing: 0
   CurrentlyInSight: 0
-  waitTime: 5
+  waitTime: 0.2
   AC: {fileID: 195732367}
-  AS: {fileID: 0}
+  AS: {fileID: 622955643}
 --- !u!60 &1361825553
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2672,13 +2696,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1996602116676414519, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
+      propertyPath: nPL
+      value: 
+      objectReference: {fileID: 622955644}
+    - target: {fileID: 1996602116676414519, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
+      propertyPath: Step
+      value: 
+      objectReference: {fileID: 622955643}
     - target: {fileID: 5588691216687956927, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 5588691216687956927, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6274557548841156734, guid: 8ceb7f101169edd488455f8a459cd24a, type: 3}
       propertyPath: m_Volume

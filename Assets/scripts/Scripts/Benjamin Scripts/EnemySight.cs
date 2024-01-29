@@ -34,8 +34,8 @@ public class EnemySight : MonoBehaviour
         if (hit.collider == target.GetComponent<BoxCollider2D>() && IsChasing != true) // if the linecast hit the player object and is not chasing the player
         {
             CurrentlyInSight = true;
-            AS.PlayOneShot(AC.clips[2]);
             StartCoroutine(ChaseTimer()); // starts the chase timer, used for chase sequence
+            AS.PlayOneShot(AC.clips[2]);
         }
       
 
