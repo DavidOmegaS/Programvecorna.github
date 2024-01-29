@@ -37,6 +37,7 @@ public class EnemySight : MonoBehaviour
             AS.PlayOneShot(AC.clips[2]);
             StartCoroutine(ChaseTimer()); // starts the chase timer, used for chase sequence
         }
+      
 
      
     }
