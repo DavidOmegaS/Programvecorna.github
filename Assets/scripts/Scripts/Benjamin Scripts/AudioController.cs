@@ -54,11 +54,11 @@ public class AudioController : MonoBehaviour
             }
         }
 
-        if (IsmenuScene == true && !MenuTheme.isPlaying || victoryscreen == true && !StressMusic.isPlaying && !AmbientMusic.isPlaying)
+        if (IsmenuScene == true && !MenuTheme.isPlaying)
         {
             MenuTheme.Play();
         }
-        else if (victoryscreen == true && (StressMusic.isPlaying || AmbientMusic.isPlaying)) 
+        else if (victoryscreen.GetComponent<Canvas>().isActiveAndEnabled == true && !MenuTheme.isPlaying) 
         {
             StressMusic.Pause();
             AmbientMusic.Pause();
@@ -69,6 +69,7 @@ public class AudioController : MonoBehaviour
     IEnumerator AudioDelay()
     {
         CanPlay = false;
+        print("steps");
         Step.Play();
         yield return new WaitForSeconds(loopdelay);
         CanPlay = true;
