@@ -14,6 +14,7 @@ public class SandMachine : MonoBehaviour
     [SerializeField] float spawntime;
     public float minspawntime;
     public float maxspawntime;
+    [SerializeField] Transform Spawnpoint;
     // Start is called before the first frame update
     void Start()
     {
@@ -44,7 +45,7 @@ public class SandMachine : MonoBehaviour
             timer = 0;
             spawntime = Random.Range(minspawntime, maxspawntime);
             print("i hate sand");
-            Instantiate(SandstormObject);
+            Instantiate(SandstormObject, Spawnpoint.position, Quaternion.identity);
         }
     }
 }
