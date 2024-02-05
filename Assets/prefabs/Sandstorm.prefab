@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timer: 0
   destructiontimer: 30
-  speed: 5
+  speed: 8
 --- !u!95 &-2176848400456259456
 Animator:
   serializedVersion: 5

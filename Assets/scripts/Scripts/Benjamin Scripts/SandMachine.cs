@@ -28,7 +28,7 @@ public class SandMachine : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, 1 * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, target.transform.position, 6 * Time.deltaTime);
 
 
         if((Vector2)transform.position == (Vector2)point1.position)
