@@ -9,13 +9,12 @@ public class gameManager : MonoBehaviour
 
     public void Play()
     {
-        SceneManager.LoadScene("mainScene");
+        SceneManager.LoadScene("mainScene"); //när den här voiden händer, t.ex. när man trycker på en knapp, så loadar den scenen som heter mainScene
     }
 
-    public void Quit()
+    public void Quit() //spelet stängs ner
     {
         Application.Quit();
-        Debug.Log("player quit");
     }
 
     public void mainMenu()
