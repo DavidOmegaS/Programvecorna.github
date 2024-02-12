@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemySight : MonoBehaviour
 {
-    // Benjamin (mostly stolen from unity docs and random peoples posts)
     public Transform origin; // enemy character - Benjamin
     public Transform target; // target, player character - Benjamin
     RaycastHit2D hit; 
@@ -56,14 +55,14 @@ public class EnemySight : MonoBehaviour
         yield return new WaitForSeconds(waitTime);
         if (CurrentlyInSight == true) // continues the chase - Benjamin
         {
-            AC.Stress = true;
+            AC.Stress = true; // Stress Music overwrites ambient music
             IsChasing = true; // David
             print("I SEE YA");
             StartCoroutine(ChaseTimer()); // loops the chasetimer - Benjamin
         }
         else if(CurrentlyInSight == false) // ends the chase - Benjamin
         {
-            AC.Stress = false;
+            AC.Stress = false; // Stress Music stops playing and Ambient music plays instead
             print("Must have been the wind.");
             IsChasing = false; // No longer chasing - Benjamin
             StopCoroutine(ChaseTimer());
