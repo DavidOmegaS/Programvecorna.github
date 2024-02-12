@@ -6,25 +6,25 @@ using TMPro;
 
 public class EscapeKey : MonoBehaviour
 {
-    public bool IsPaused;
+    public bool IsPaused; // is time paused? - Benjamin
     [SerializeField] Canvas pausemenu;
 
     void Start()
     {
         Time.timeScale = 1;
         IsPaused = false;
-        pausemenu.GetComponent<Canvas>().enabled = false;
+        pausemenu.GetComponent<Canvas>().enabled = false; // disables pausescreen - Benjamin
     }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && IsPaused == false)
+        if(Input.GetKeyDown(KeyCode.Escape) && IsPaused == false) // enables pausescreen and stops time - Benjamin
         {
             pausemenu.GetComponent<Canvas>().enabled = true;
             Time.timeScale = 0;
             IsPaused = true;
 
         }
-        else if (Input.GetKeyDown(KeyCode.Escape) && IsPaused == true)
+        else if (Input.GetKeyDown(KeyCode.Escape) && IsPaused == true) // if time is paused unpauses and removes pausescreen - Benjamin
         {
             pausemenu.GetComponent<Canvas>().enabled = false;
             Time.timeScale = 1;
