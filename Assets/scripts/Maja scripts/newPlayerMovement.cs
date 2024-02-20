@@ -47,7 +47,7 @@ public class newPlayerMovement : MonoBehaviour
             IsCrouching = false;
             playercollider.size = new Vector2(1, 1);
         }
-        if (Input.GetKeyDown(KeyCode.Space) && IsDashing == false)
+        if (Input.GetKeyDown(KeyCode.Space) && IsDashing == false) // if pressing space start dash ability coroutine - Benjamin
         {
             StartCoroutine(DashAbility());
         }
@@ -65,7 +65,7 @@ public class newPlayerMovement : MonoBehaviour
             isMoving = true;
         }*/
 
-        if (Input.GetKeyDown(KeyCode.Home) && gameObject.layer == 0)
+        if (Input.GetKeyDown(KeyCode.Home) && gameObject.layer == 0) // Cheat for testing purposes that allows you to be ignored by enemies, clicking home button turns this on and then off - Benjamin
         {
             print("Activating god mode");
             gameObject.layer = 6;
@@ -91,8 +91,8 @@ public class newPlayerMovement : MonoBehaviour
 
     void Move()
     {
-        rb.velocity = new Vector2(moveDirection.x * (IsCrouching ? CrouchSpeed : moveSpeed), moveDirection.y * (IsCrouching ? CrouchSpeed : moveSpeed));
-        if(Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == -1)
+        rb.velocity = new Vector2(moveDirection.x * (IsCrouching ? CrouchSpeed : moveSpeed), moveDirection.y * (IsCrouching ? CrouchSpeed : moveSpeed)); // if holding Crouchbutton uses crouchspeed instead of normal speed - Benjamin
+        if (Input.GetAxisRaw("Vertical") == 1 || Input.GetAxisRaw("Horizontal") == 1 || Input.GetAxisRaw("Vertical") == -1 || Input.GetAxisRaw("Horizontal") == -1) // if moving in any direction play walk animation, otherwise dont. - Benjamin
         {
             animator.SetBool("Walk", true);
             IsWalking = true;
@@ -103,17 +103,17 @@ public class newPlayerMovement : MonoBehaviour
             IsWalking = false;
         }
 
-        if (Input.GetAxisRaw("Horizontal") == 1)
+        if (Input.GetAxisRaw("Horizontal") == 1) // if moving right flip sprite - Benjamin
         {
             renderer.flipX = true;
         }
-        else if(Input.GetAxisRaw("Horizontal") == -1)
+        else if(Input.GetAxisRaw("Horizontal") == -1) // if moving left dont flip sprite - Benjamin
         {
             renderer.flipX = false;
         }
     }
 
-    IEnumerator DashAbility()
+    IEnumerator DashAbility() // Moves faster for a period of time and enables animator to play the corresponding animation in the player animator - Benjamin
     {
         AS.PlayOneShot(AC.clips[3]);
         IsDashing = true;

@@ -21,20 +21,19 @@ public class Crouch : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.LeftControl))
+        if (Input.GetKey(KeyCode.LeftControl)) // hold LeftControl to stealth
         {
             IsCrouching = true;
-            playercollider.size = new Vector2(0.3f, 0.3f);
+            playercollider.size = new Vector2(0.3f, 0.3f); // collider becomes smaller to get dectected in a lesser area
         }
-        else if (Input.GetKeyUp(KeyCode.LeftControl))
+        else if (Input.GetKeyUp(KeyCode.LeftControl)) // release LeftControl
         {
             IsCrouching = false;
-            playercollider.size = new Vector2(1,1);
+            playercollider.size = new Vector2(1,1); // collider becomes normal
         }
 
 
-       // rb.velocity = new Vector2(moveDirection.x * (IsCrouching ? CrouchSpeed : moveSpeed), moveDirection.y * (IsCrouching ? CrouchSpeed : moveSpeed));
-
-       // inte säker om detta skulle fungera, men är menad att ändra movespeed till crouchspeed om IsCrouching är true
+       // rb.velocity = new Vector2(moveDirection.x * (IsCrouching ? CrouchSpeed : moveSpeed), moveDirection.y * (IsCrouching ? CrouchSpeed : moveSpeed)); (if holding Crouchbutton uses crouchspeed instead of normal speed)
+       // works in movement script, only here for reading purposes
     }
 }

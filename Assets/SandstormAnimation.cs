@@ -19,9 +19,9 @@ public class Sandstorm : MonoBehaviour
 
         timer += Time.deltaTime;
 
-        transform.position += speed * Time.deltaTime * transform.right;
+        transform.position += speed * Time.deltaTime * transform.right; // moves towards the right at a constant speed
 
-        if(timer >= destructiontimer)
+        if(timer >= destructiontimer) // destroys itself after a set period of time
         {
             Destroy(this.gameObject);
         }

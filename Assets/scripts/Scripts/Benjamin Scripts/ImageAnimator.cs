@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class ImageAnimator : MonoBehaviour
 {
-    [SerializeField] bool VictoryScreen;
+    [SerializeField] bool VictoryScreen; // bools for specific animations in the Image animator (makes sure it doesnt turn on the wrong animation)
     [SerializeField] bool GameOverScreen;
-    Animator animator;
+    Animator animator; 
     // Start is called before the first frame update
     void Start()
     {
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>(); // objects animator
     } 
 
-    void Update()
+    void Update() // if bool true let animator play specific animation
     {
-        if(VictoryScreen == true)
+        if(VictoryScreen == true) 
         {
             animator.SetBool("victoryscreen", true);
         }
