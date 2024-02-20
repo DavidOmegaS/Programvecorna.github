@@ -40,19 +40,16 @@ public class Enemy_chase : MonoBehaviour
         {
             seeker.StartPath(rb.position, playerTarget.position, OnPathComplete); // Startar path ifrån fienden poistion till spellarens position
 
-            /*  if (sight.IsChasing) // Om fienden ser spelaren
+              if (sight.IsChasing) // Om fienden ser spelaren
               {
                   seeker.StartPath(rb.position, playerTarget.position, OnPathComplete); // Startar path ifrån fienden poistion till spellarens position
               }
               else
               {
-                   seeker.StartPath(rb.position, startPoint.position, OnPathComplete);
+                   seeker.StartPath(rb.position, startPoint.position, OnPathComplete); // startar en path till dens start position 
               }
 
-              //if (sight.IsChasing == false && rechEndOfPath == true)
-              {
-                //  transform.position = startPoint.position; 
-              } */
+            
 
         }
       
@@ -96,7 +93,7 @@ public class Enemy_chase : MonoBehaviour
         
         if (distance < nextWaypointDistance)
         {
-            currentWaypoint++; // plusar vi på med ett 
+            currentWaypoint++; // plusar vi på med ett nästa vaxpoint
         }
 
     }
