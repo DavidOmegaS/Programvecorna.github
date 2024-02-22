@@ -6793,6 +6793,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1871907499}
     - target: {fileID: 2959511995733349555, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+      propertyPath: stealList
+      value: 
+      objectReference: {fileID: 1265271742}
+    - target: {fileID: 2959511995733349555, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: prefabster
       value: 
       objectReference: {fileID: 6761622559787991338, guid: a3ce73b54a360fd4e881d51e1400673c, type: 3}
@@ -15174,6 +15178,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1265271742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3303483924371976056, guid: 44b6d19964054664691e88bff6719734, type: 3}
+  m_PrefabInstance: {fileID: 5970766615768453580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1297162494
 GameObject:
   m_ObjectHideFlags: 0
