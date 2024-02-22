@@ -7,9 +7,9 @@ public class gameManager : MonoBehaviour
 {
     
 
-    public void Play()
+    public void Play() //när den här voiden händer, t.ex. när man trycker på en knapp, så loadar den scenen som heter mainScene
     {
-        SceneManager.LoadScene("mainScene"); //när den här voiden händer, t.ex. när man trycker på en knapp, så loadar den scenen som heter mainScene
+        SceneManager.LoadScene("mainScene");
     }
 
     public void Quit() //spelet stängs ner
@@ -17,12 +17,12 @@ public class gameManager : MonoBehaviour
         Application.Quit();
     }
 
-    public void mainMenu()
+    public void mainMenu() //byter till scenen mainMenu
     {
         SceneManager.LoadScene("mainMenu");
     }
 
-    public void restart()
+    public void restart() //reloadar scenen mainScene vilket startar om allt och timeScale gör så att spelet inte är fryst/pausat
     {
         SceneManager.LoadScene("mainScene");
         Time.timeScale = 1;
