@@ -25713,6 +25713,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3410394960396246529, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: timeRemaining
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 3410394960396246529, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: Gameoverscreen
+      value: 
+      objectReference: {fileID: 1984321056}
     - target: {fileID: 4085085756115332993, guid: 44b6d19964054664691e88bff6719734, type: 3}
       propertyPath: m_Name
       value: Canvas

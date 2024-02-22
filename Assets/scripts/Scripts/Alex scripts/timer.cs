@@ -10,6 +10,9 @@ public class timer : MonoBehaviour
     public bool timerIsRunning = false;
     public TMP_Text timeText;
     public bool timeIsUp = false;
+
+    [SerializeField]
+    GameObject Gameoverscreen; // - David 
     private void Start()
     {
         // Starts the timer automatically
@@ -24,6 +27,8 @@ public class timer : MonoBehaviour
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
                 timeIsUp = false;
+
+               
             }
             else
             {
@@ -31,6 +36,8 @@ public class timer : MonoBehaviour
                 timeRemaining = 0;
                 timerIsRunning = false;
                 timeIsUp = true;
+
+                Gameoverscreen.SetActive(true); // - David
             }
         }
     }
