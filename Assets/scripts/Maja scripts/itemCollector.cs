@@ -12,6 +12,7 @@ public class itemCollector : MonoBehaviour
     private int coins = 0;
     public int itemsTotal = 0;
     public GameObject victoryScreen;
+    public GameObject stealList;
 
     [SerializeField] 
     private TextMeshProUGUI itemsText;
@@ -55,11 +56,13 @@ public class itemCollector : MonoBehaviour
         {
             Debug.Log("Victory!!");
             victoryScreen.SetActive(true);
+            stealList.SetActive(false);
             Time.timeScale = 0;
         }
         else
         {
             victoryScreen.SetActive(false);
+            stealList.SetActive(true);
         }
     }
 }

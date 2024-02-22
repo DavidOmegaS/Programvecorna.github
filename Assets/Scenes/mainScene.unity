@@ -6793,6 +6793,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1871907499}
     - target: {fileID: 2959511995733349555, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
+      propertyPath: stealList
+      value: 
+      objectReference: {fileID: 1265271742}
+    - target: {fileID: 2959511995733349555, guid: df657e96cc980754e9f9d1f1ee6787ec, type: 3}
       propertyPath: prefabster
       value: 
       objectReference: {fileID: 6761622559787991338, guid: a3ce73b54a360fd4e881d51e1400673c, type: 3}
@@ -15178,6 +15182,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1265271742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3303483924371976056, guid: 44b6d19964054664691e88bff6719734, type: 3}
+  m_PrefabInstance: {fileID: 5970766615768453580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1297162494
 GameObject:
   m_ObjectHideFlags: 0
@@ -25708,6 +25717,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4121719801640331920, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4418248730123515539, guid: 44b6d19964054664691e88bff6719734, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -25720,6 +25733,51 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 25802962}
+    - target: {fileID: 8166262146587053334, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8166262146587053334, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615107223668879218, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_text
+      value: '- Apples 0/4                       - Watermelons 0/3              -
+        Coin bags 0/5'
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615107223668879218, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615107223668879218, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b3d4f2ee57e00f341af593a0e4c5c70e, type: 2}
+    - target: {fileID: 8615107223668879218, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1659579671367926245, guid: b3d4f2ee57e00f341af593a0e4c5c70e, type: 2}
+    - target: {fileID: 8615107223668879218, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8615107223668879218, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8807330078394416515, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b3d4f2ee57e00f341af593a0e4c5c70e, type: 2}
+    - target: {fileID: 8807330078394416515, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -1659579671367926245, guid: b3d4f2ee57e00f341af593a0e4c5c70e, type: 2}
+    - target: {fileID: 8807330078394416515, guid: 44b6d19964054664691e88bff6719734, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
