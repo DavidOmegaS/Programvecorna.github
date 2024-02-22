@@ -7121,6 +7121,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5695619873971670383, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: gameOverMenu
+      value: 
+      objectReference: {fileID: 1984321056}
     - target: {fileID: 6326292966168232475, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -18772,6 +18776,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5695619873971670383, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: gameOverMenu
+      value: 
+      objectReference: {fileID: 1984321056}
     - target: {fileID: 6326292966168232475, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -20371,6 +20379,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5695619873971670383, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: gameOverMenu
+      value: 
+      objectReference: {fileID: 1984321056}
     - target: {fileID: 6326292966168232475, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -22867,6 +22879,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5695619873971670383, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: gameOverMenu
+      value: 
+      objectReference: {fileID: 1984321056}
     - target: {fileID: 6326292966168232475, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -23321,6 +23337,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971845920}
   m_CullTransparentMesh: 1
+--- !u!1 &1984321056 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4121719801640331920, guid: 44b6d19964054664691e88bff6719734, type: 3}
+  m_PrefabInstance: {fileID: 5970766615768453580}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2001891250
 GameObject:
   m_ObjectHideFlags: 0
@@ -24286,6 +24307,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5695619873971670383, guid: 7b8828232d186c44499ba02054a64041, type: 3}
+      propertyPath: gameOverMenu
+      value: 
+      objectReference: {fileID: 1984321056}
     - target: {fileID: 6326292966168232475, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: m_Layer
       value: 6

@@ -73,7 +73,7 @@ public class Enemy_patrol : MonoBehaviour
         if (transform.position == patrolPonits[targetpoint].position && waitTime == 0  ) // om fienden har samma position som punkten och den har väntat tillräkligt länge
         {
             IncresTargetint();
-            waitTime = wait;
+            waitTime = wait; // resetar vi waittime
         }
 
         
@@ -83,9 +83,9 @@ public class Enemy_patrol : MonoBehaviour
     {
         targetpoint++; // adderar 1 på värdet 
 
-        if (targetpoint == patrolPonits.Length)
+        if (targetpoint == patrolPonits.Length) // om fienden har gåt till alla punkter på listan
         {
-            targetpoint = 0;
+            targetpoint = 0; // sätter vi att den går till den första punkten på listan
         }
     }
         

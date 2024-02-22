@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 
-public class Enemy_chase : MonoBehaviour
+public class Enemy_chase : MonoBehaviour // NOT IN GAME
 {
     public EnemySight sight; // refferens till enemy sight script
    
@@ -24,7 +24,7 @@ public class Enemy_chase : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        sight = GetComponentInChildren<EnemySight>();
+        sight = GetComponentInChildren<EnemySight>(); // letar efter fiendens sight
 
         seeker = GetComponent<Seeker>(); // letar efter sekker i objektet
         rb = GetComponent<Rigidbody2D>(); // letar efter rigidbody2D
@@ -36,9 +36,9 @@ public class Enemy_chase : MonoBehaviour
     }
     void UpdatePath()
     {
-        if (seeker.IsDone())
+        if (seeker.IsDone()) // om seeker är klar
         {
-            seeker.StartPath(rb.position, playerTarget.position, OnPathComplete); // Startar path ifrån fienden poistion till spellarens position
+            //seeker.StartPath(rb.position, playerTarget.position, OnPathComplete); // Startar path ifrån fienden poistion till spellarens position
 
               if (sight.IsChasing) // Om fienden ser spelaren
               {
@@ -84,16 +84,16 @@ public class Enemy_chase : MonoBehaviour
 
        
 
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized; // 
-        Vector2 force = direction * speed * Time.deltaTime;
+        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized; // sätter ett hål mot den nuvarente waypoint(ditt den ska gå) ifrån fiendes position
+        Vector2 force = direction * speed * Time.deltaTime; // vi gör en kraft som är åt hållet till 
 
-        rb.AddForce(force);
+        rb.AddForce(force); // lägger till den kraften till våran fiende 
 
-        float distance = Vector2.Distance(rb.position, path.vectorPath [currentWaypoint]);
+        float distance = Vector2.Distance(rb.position, path.vectorPath [currentWaypoint]); // distancen mellan findens position och nästa waypontens
         
-        if (distance < nextWaypointDistance)
+        if (distance < nextWaypointDistance) // om distancen är mindre än nästa waypoint
         {
-            currentWaypoint++; // plusar vi på med ett nästa vaxpoint
+            currentWaypoint++; // plusar vi på med ett nästa vaypoint
         }
 
     }
