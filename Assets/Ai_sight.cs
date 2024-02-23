@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ai_sight : MonoBehaviour
+public class Ai_sight : MonoBehaviour // NOT IN GAME
 {
    public Enemy_chase chase;
     public EnemySight sight;

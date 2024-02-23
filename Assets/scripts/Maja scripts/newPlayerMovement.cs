@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class newPlayerMovement : MonoBehaviour
 {
+    //det här var mitt (Majas) script först där jag gjorde player movement men Bnejamin har ändrat på typ all kod för att göra crouch, animation o sånt så det är inte riktigt mitt script längre
     public float moveSpeed = 5f;
     public Rigidbody2D rb;
     [SerializeField] BoxCollider2D playercollider;
@@ -51,19 +52,6 @@ public class newPlayerMovement : MonoBehaviour
         {
             StartCoroutine(DashAbility());
         }
-
-        //maja
-        /*if(Input.GetKey(KeyCode.E) && isMoving == true)
-        {
-            rb.constraints = RigidbodyConstraints2D.FreezePosition;
-            isMoving = false;
-        }
-
-        if(Input.GetKey(KeyCode.F) && rb.constraints == RigidbodyConstraints2D.FreezePosition)
-        {
-            rb.constraints = RigidbodyConstraints2D.None;
-            isMoving = true;
-        }*/
 
         if (Input.GetKeyDown(KeyCode.Home) && gameObject.layer == 0) // Cheat for testing purposes that allows you to be ignored by enemies, clicking home button turns this on and then off - Benjamin
         {
