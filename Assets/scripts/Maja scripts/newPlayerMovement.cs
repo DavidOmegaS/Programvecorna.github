@@ -22,7 +22,7 @@ public class newPlayerMovement : MonoBehaviour
 
     private Vector2 moveDirection;
 
-    private bool isMoving = true;
+    //private bool isMoving = true;
 
     public bool isfacingright; // -David
 
