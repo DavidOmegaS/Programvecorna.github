@@ -6,28 +6,30 @@ using TMPro;
 
 public class itemCollector : MonoBehaviour
 {
-    public GameObject prefabster;
+    public GameObject prefabster; //confetti
+    //object som man kan stjäla, och hur många man har stulit
     private int apples = 0;
     private int watermelons = 0;
     private int coins = 0;
     public int itemsTotal = 0;
+    //ui
     public GameObject victoryScreen;
     public GameObject stealList;
 
     [SerializeField] 
-    private TextMeshProUGUI itemsText;
+    private TextMeshProUGUI itemsText;//texten på skärmen som visar hur mycket du har stulit
 
 
 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("apple"))
+        if (collision.gameObject.CompareTag("apple"))//om man går i ett äpple så:
         {
-            Instantiate(prefabster, transform.position, Quaternion.identity);
-            Destroy(collision.gameObject);
-            apples++;
-            itemsTotal++;
+            Instantiate(prefabster, transform.position, Quaternion.identity);//confetti
+            Destroy(collision.gameObject);//äpple försvinner
+            apples++;//äpple amount blir +1
+            itemsTotal++;//items totalt blir +1
             itemsText.text = "- Apples " + apples + "/4            - Watermelons " + watermelons + "/4 - Coin bags " + coins + "/5";
             
         }
