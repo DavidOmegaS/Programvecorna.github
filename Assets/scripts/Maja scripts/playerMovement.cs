@@ -19,8 +19,8 @@ public class playerMovement : MonoBehaviour //script används inte, input movemen
         rb.MovePosition(rb.position + moveInput * moveSpeed * Time.fixedDeltaTime); //FLYTTAR PÅ SIG på vector 2 aka x och y
     }
 
-    void OnMove(InputValue value)
+    /*void OnMove(InputValue value)
     {
         moveInput = value.Get<Vector2>(); //vector 2 till gameobject
-    }
+    }*/
 }

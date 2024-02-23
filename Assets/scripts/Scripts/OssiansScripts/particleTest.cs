@@ -18,8 +18,8 @@ public class particleTest : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider other)
+    /*private void OnTriggerEnter2D(Collider other)
     {
         
-    }
+    }*/
 }
