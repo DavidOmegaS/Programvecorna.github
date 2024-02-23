@@ -7397,7 +7397,7 @@ PrefabInstance:
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Victoryscreen
       value: 
-      objectReference: {fileID: 213566664}
+      objectReference: {fileID: 1450185429}
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Gameoverscreen
       value: 
@@ -19604,7 +19604,7 @@ PrefabInstance:
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Victoryscreen
       value: 
-      objectReference: {fileID: 213566664}
+      objectReference: {fileID: 1450185429}
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Gameoverscreen
       value: 
@@ -21199,7 +21199,7 @@ PrefabInstance:
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Victoryscreen
       value: 
-      objectReference: {fileID: 213566664}
+      objectReference: {fileID: 1450185429}
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Gameoverscreen
       value: 
@@ -23833,7 +23833,7 @@ PrefabInstance:
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Victoryscreen
       value: 
-      objectReference: {fileID: 213566664}
+      objectReference: {fileID: 1450185429}
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Gameoverscreen
       value: 
@@ -25481,7 +25481,7 @@ PrefabInstance:
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Victoryscreen
       value: 
-      objectReference: {fileID: 213566664}
+      objectReference: {fileID: 1450185429}
     - target: {fileID: 8728645230322062611, guid: 7b8828232d186c44499ba02054a64041, type: 3}
       propertyPath: Gameoverscreen
       value: 
