@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class playerMovement : MonoBehaviour
+public class playerMovement : MonoBehaviour //script används inte, input movement system som inte fungerade på andras datorer men den funkade på min :,)
 {
     private Vector2 moveInput;
     private Rigidbody2D rb;
