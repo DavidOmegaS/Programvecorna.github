@@ -5,14 +5,14 @@ using UnityEngine;
 public class hidingScript : MonoBehaviour
 {
     public GameObject player;
-    public float alpha = 0f;
-    public float otherAlpha = 1f;
+    public float alpha = 0f;  //player alpha, 0 alpha gör så att playern blir osynlig/igenomskinlig men finns fortfarande i spelet
+    public float otherAlpha = 1f; //player är synlig igen
     private bool canHide;
     public bool isHiding;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        canHide = true;
+        canHide = true;//när man collid
     }
 
     private void OnTriggerExit2D(Collider2D other)
