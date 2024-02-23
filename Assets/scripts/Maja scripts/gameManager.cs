@@ -15,6 +15,7 @@ public class gameManager : MonoBehaviour
     public void Quit() //spelet stängs ner
     {
         Application.Quit();
+        Debug.Log("Player quit"); //says if the void works since we can't see if it works otherwise if we are not in a build
     }
 
     public void mainMenu() //byter till scenen mainMenu
